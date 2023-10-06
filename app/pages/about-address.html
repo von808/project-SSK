@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--=include sprite.html-->
+  <div class="wrapper">
+    <!--=include burger.html-->
+    <!--=include header.html-->
+    <main class="main">
+      <section class="address">
+        <div class="container">
+          <div class="address__inner">
+            <div class="address__head">
+              <h1 class="address__title">Адреса самовызова</h1>
+              <div class="address__droplist">
+                <div class="droplist">
+                  <div class="droplist-control">
+                    <span class="droplist__title">Москва</span>
+                    <svg class="down-compact">
+                      <use xlink:href="#down-compact"></use>
+                    </svg>
+                  </div>
+                  <div class="droplist-list">
+                    <form class="form droplist__form">
+                      <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
+                      <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input droplist__form-input" type="search" placeholder=" ">
+                        <label class="form__label">Поиск</label>
+                        <button>
+                          <svg class="search__icon">
+                            <use xlink:href="#search-lg"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </form>
+                    <ul class="droplist-list__items">
+                      <li class="droplist-list__item selected">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Москва</span>
+                      </li>
+                      <li class="droplist-list__item">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Нижний Новгород</span>
+                      </li>
+                      <li class="droplist-list__item">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Великий Новгород</span>
+                      </li>
+                      <li class="droplist-list__item">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Новороссийск</span>
+                      </li>
+                      <li class="droplist-list__item">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Новосибирск</span>
+                      </li>
+                      <li class="droplist-list__item">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Новомосковск</span>
+                      </li>
+                      <li class="droplist-list__item">
+                        <svg class="droplist-check">
+                          <use xlink:href="#selected-check"></use>
+                        </svg>
+                        <span>Новочеркасск</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="address-tab">
+        <div class="container">
+          <div class="address-tab__inner">
+            <div class="address-tab__btns">
+              <button class="address-tab__btn address-tab__btn--1 btn-white selected">Список</button>
+              <button class="address-tab__btn address-tab__btn--2 btn-white">Карта</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map map-switch">
+        <div class="container">
+          <div class="map__inner">
+            <div class="map__box">
+              <img class="map__img" src="images/map-1.jpg" alt="map">
+              <button class="map__marker-btn map__marker-btn--1">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--2">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--3">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--4">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--5">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--6">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--7">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box top">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--8">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box top">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--9">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box left">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--10">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box left">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--11">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box left">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--12">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box left">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+              <button class="map__marker-btn map__marker-btn--13">
+                <img class="map__marker-img" src="images/map-marker.svg" alt="map-marker">
+                <img class="map__marker-img map__marker-img-circle" src="images/map-circle.svg" alt="map-circle">
+                <div class="addresses-list__item-box left">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица,
+                        43к2</span></span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="addresses-list addresses-list-switch selected">
+        <div class="container">
+          <div class="addresses-list__inner">
+            <div class="addresses-list__items">
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--b">4</span>
+                    <span class="metro">Славянский бульвар</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span>ТЦ «Галерея ремонта»</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>Кастанаевская улица, 43к2</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--y">8А</span>
+                    <span class="metro">Минская</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>Минская улица, 1М</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--r">14</span>
+                    <span class="metro">Спортивная</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span>ТЦ «Айсберг»</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>улица Усачёва, 37с1</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--p">D2</span>
+                    <span class="metro">Депо</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>улица Полбина, 29с1</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--g-g">Возле</span>
+                    <span class="metro">Пруд Стереньтьевых Авраамов</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span>ТЦ «Дом Быта»</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">МО, г. Видное, <span>Центральная улица, 13</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--g">12</span>
+                    <span class="metro">Бунинская аллея</span>
+                  </div>
+                  <div class="addresses-list__item-subtitle">
+                    <span>ТЦ «Галерея ремонта»</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>улица Адмирала Руднева, 16</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--g-g">Возле</span>
+                    <span class="metro">Консерватория №3</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>Чечёрский проезд, 68</span></span>
+              </div>
+              <div class="addresses-list__item">
+                <div class="addresses-list__item-box">
+                  <div class="addresses-list__item-title">
+                    <span class="metro-icon metro-icon--g-g">Возле</span>
+                    <span class="metro">НИИ Скорой помощи</span>
+                  </div>
+                  <a class="addresses-list__item-phone" href="tel:89151620703">8 915 162 07 03</a>
+                  <span class="addresses-list__item-time">Пн-Вс: 10:00 - 21:00</span>
+                </div>
+                <span class="addresses-list__item-address">г. Москва, <span>3-я Железногорская улица, 6</span></span>
+              </div>
+            </div>
+            <a class="addresses-list__more-btn btn-white" href="#!">Загрузить еще</a>
+          </div>
+        </div>
+      </section>
+      <section class="seo-text">
+        <div class="container">
+          <div class="seo-text__inner">
+            <p>
+              [SEO ТЕКСТ] Являясь всего лишь частью общей картины, представители современных социальных резервов будут
+              превращены в
+              посмешище, хотя само их существование приносит несомненную пользу обществу. Приятно, граждане, наблюдать,
+              как ключевые
+              особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, объявлены
+              нарушающими
+              общечеловеческие нормы этики и морали. С другой стороны, убеждённость некоторых оппонентов однозначно
+              определяет каждого
+              участника как способного принимать собственные решения касаемо вывода текущих активов .
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--=include footer.html-->
+  </div>
+  <script src="js/about.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

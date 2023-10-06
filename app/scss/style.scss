@@ -1,0 +1,19 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/burger.scss';
+
+@import 'elements/swipers.scss';
+@import 'elements/form.scss';
+
+@import 'pages/index.scss';
+@import 'pages/media.scss';
+@import 'pages/about.scss';
+@import 'pages/services.scss';
+
+@import 'media';

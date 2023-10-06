@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--=include sprite.html-->
+  <div class="wrapper">
+    <!--=include burger.html-->
+    <!--=include header.html-->
+    <main class="main">
+      <section class="page-title">
+        <div class="container">
+          <div class="page-title__inner">
+            <h1 class="page-title__title">Пресс-центр</h1>
+          </div>
+        </div>
+      </section>
+      <section class="manage">
+        <div class="container">
+          <div class="manage__inner">
+            <form class="form manage__form">
+              <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
+              <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
+              <div class="form__input-box">
+                <span class="input-overlay-disabled"></span>
+                <input class="form__input manage__form-input" type="search" placeholder=" ">
+                <label class="form__label">Поиск</label>
+                <button>
+                  <svg class="search__icon">
+                    <use xlink:href="#search-lg"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="form__input-box form-group">
+                <div class="dropdown">
+                  <button type="button" class="dropdown__button">
+                    <span class="dropdown-placeholder">Сортировка</span>
+                  </button>
+                  <svg class="chevron-right">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="sorting-1">Sorting-1</li>
+                    <li class="dropdown__list-item" data-value="sorting-2">Sorting-2</li>
+                    <li class="dropdown__list-item" data-value="sorting-3">Sorting-3</li>
+                    <li class="dropdown__list-item" data-value="sorting-4">Sorting-4</li>
+                  </ul>
+                  <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                </div>
+              </div>
+            </form>
+            <div class="manage__filter">
+              <div class="manage__cat">
+                <button class="manage__cat-btn">Показать все</button>
+                <button class="manage__cat-btn">Советы</button>
+                <button class="manage__cat-btn">Готовый интерьер</button>
+                <button class="manage__cat-btn">Стройка</button>
+                <button class="manage__cat-btn">Новости компании</button>
+                <button class="manage__cat-btn">Профессионалам</button>
+              </div>
+              <div class="manage__tegs">
+                <a class="tegs-link" href="#!">сантехника</a>
+                <a class="tegs-link" href="#!">сантехникамосква</a>
+                <a class="tegs-link" href="#!">блог</a>
+                <a class="tegs-link" href="#!">гайд</a>
+                <a class="tegs-link" href="#!">скидка</a>
+                <a class="tegs-link" href="#!">полезное</a>
+                <a class="tegs-link" href="#!">на_почитать</a>
+                <a class="tegs-link" href="#!">кошачий_корм</a>
+                <a class="tegs-link" href="#!">развитие</a>
+                <a class="tegs-link" href="#!">инфо</a>
+                <a class="tegs-link" href="#!">доставка</a>
+                <a class="tegs-link" href="#!">релокация</a>
+                <a class="tegs-link" href="#!">отдых</a>
+                <a class="tegs-link" href="#!">конфети</a>
+                <a class="tegs-link" href="#!">купи_сумку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="news__inner">
+            <div class="news__cards">
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-1.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Советы</a>
+                    <a class="news__card-date" href="#!">19 июля 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Монтаж узла ввода ХВС/ГВС и ЦО, в квартире гор. Реутов (Второй
+                    узел)</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-2.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Советы</a>
+                    <a class="news__card-date" href="#!">01 июля 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Частокол на границе починят</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-3.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Стройка</a>
+                    <a class="news__card-date" href="#!">19 июня 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Подтверждено: небо темнеет</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-4.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Профессионалам</a>
+                    <a class="news__card-date" href="#!">19 июня 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Не следует забывать, что объемы выросли</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-5.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Советы</a>
+                    <a class="news__card-date" href="#!">06 мая 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Мелочь, а приятно: герцог графства коронован</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-6.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Новости компании</a>
+                    <a class="news__card-date" href="#!">05 мая 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Не следует забывать, что сознание наших соотечественников не
+                    замутнено
+                    пропагандой</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-7.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Профессионалам</a>
+                    <a class="news__card-date" href="#!">20 марта 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Добрая половина выводов одухотворила всех причастных</a>
+                </div>
+              </div>
+              <div class="news__card">
+                <a class="news__card=img--link" href="#!">
+                  <img class="news__card-img" src="images/news-8.jpg" alt="news-img">
+                </a>
+                <div class="news__card-info">
+                  <div class="news__card-info-head">
+                    <a class="news__card-category" href="#!">Стройка</a>
+                    <a class="news__card-date" href="#!">09 марта 2023</a>
+                  </div>
+                  <a class="news__card-title" href="#!">Независимые СМИ потому и независимы, что зима близко</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="see-more">
+        <div class="container">
+          <div class="see-more__inner">
+            <button class="btn-white see-more__btn">Загрузить еще</button>
+            <div class="see-more__pagination">
+              <div class="see-more__pagination-pages">
+                <span>2</span> из <span> 15</span>
+              </div>
+              <div class="see-more__pagination-btn">
+                <div class="mini-swiper1__controls">
+                  <div class="swiper-button-next">
+                    <svg class="chevron-right">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg class="chevron-right">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seo-text">
+        <div class="container">
+          <div class="seo-text__inner">
+            <p>
+              [SEO ТЕКСТ] Являясь всего лишь частью общей картины, представители современных социальных резервов будут
+              превращены в
+              посмешище, хотя само их существование приносит несомненную пользу обществу. Приятно, граждане, наблюдать,
+              как ключевые
+              особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, объявлены
+              нарушающими
+              общечеловеческие нормы этики и морали. С другой стороны, убеждённость некоторых оппонентов однозначно
+              определяет каждого
+              участника как способного принимать собственные решения касаемо вывода текущих активов .
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--=include footer.html-->
+  </div>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
