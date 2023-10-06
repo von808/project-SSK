@@ -16,6 +16,51 @@
     gap: 24px;
 
     margin-right: auto;
+
+
+    .droplist-control {
+      color: var(--content-primary, #272727);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    .droplist-control:hover {
+      color: var(--main-primary, #1547FF);
+
+      svg {
+        fill: var(--main-variant, #0C33C0);
+        fill: transparent;
+      }
+    }
+
+    .droplist-control.active {
+      color: var(--main-variant, #0C33C0);
+      border-radius: 6px 6px 0 0;
+      box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.18), 1px 0px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.18)), (0px 0px 1px rgba(0, 0, 0, 0.24));
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        filter: none;
+        box-shadow: none;
+        background: var(--Interface-Color, #F8F7FA);
+        left: 0;
+        bottom: -2px;
+        z-index: 6;
+      }
+    }
+
+    .droplist-list {
+      box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.18)), (0px 0px 1px rgba(0, 0, 0, 0.24));
+      z-index: 4;
+    }
+
   }
 
   &__addresses {}
@@ -338,6 +383,9 @@
       top: 87px;
       left: 50%;
       transform: translateX(-50%);
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.18)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.24));
+      border-radius: 6px;
+      overflow: hidden;
 
       .catalog__category {
         width: 840px;
@@ -487,5 +535,25 @@ header {
     color: var(--main-variant, #0C33C0);
     border-radius: 6px 6px 0 0;
     box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.18), 1px 0px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.18)), (0px 0px 1px rgba(0, 0, 0, 0.24));
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 4px;
+      filter: none;
+      box-shadow: none;
+      background: var(--Interface-Color, #F8F7FA);
+      left: 0;
+      bottom: -2px;
+      z-index: 6;
+    }
+  }
+
+  .droplist-list {
+    box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.18)), (0px 0px 1px rgba(0, 0, 0, 0.24));
+    z-index: 4;
   }
 }
