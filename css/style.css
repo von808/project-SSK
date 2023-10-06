@@ -2355,14 +2355,14 @@ header .droplist-list__items svg {
   align-items: flex-end;
   gap: 24px;
 }
-.header-category__titles a {
+.header-category__title {
   color: var(--content-tertiary, #A3A3A3);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
 }
-.header-category__titles a.active {
+.header-category__title.active1 {
   color: var(--content-primary, #272727);
   font-size: 44px;
   font-style: normal;
@@ -2371,7 +2371,7 @@ header .droplist-list__items svg {
   order: -10;
   pointer-events: none;
 }
-.header-category__titles a.active:hover {
+.header-category__title.active1:hover {
   color: unset !important;
 }
 .header-category__subtitle {
