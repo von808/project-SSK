@@ -24,24 +24,40 @@ if (products) {
   });
 }
 
-// FOR-EACH-FUNCTION
-document.addEventListener('DOMContentLoaded', () => {
 
-  // OUT-CATEGORY
-  (function () {
-    var caseItem = document.querySelectorAll('.header-category__titles > a'),
-      active = document.getElementsByClassName('active');
+// OUT-CATEGORY
+const headerCategoryTitle1 = document.querySelector('.header-category__title--1');
+const headerCategoryTitle2 = document.querySelector('.header-category__title--2');
+const headerCategoryTitle3 = document.querySelector('.header-category__title--3');
+const headerCategoryTitle4 = document.querySelector('.header-category__title--4');
 
-    Array.from(caseItem).forEach(function (item, i, caseItem) {
-      item.addEventListener('click', function (e) {
-        if (active.length > 0 && active[0] !== this)
-          active[0].classList.remove('active');
+headerCategoryTitle1.onclick = function () {
+  headerCategoryTitle1.classList.add('active1')
+  headerCategoryTitle2.classList.remove('active1')
+  headerCategoryTitle3.classList.remove('active1')
+  headerCategoryTitle4.classList.remove('active1')
+}
 
-        this.classList.toggle('active');
-      });
-    });
-  })();
-});
+headerCategoryTitle2.onclick = function () {
+  headerCategoryTitle1.classList.remove('active1')
+  headerCategoryTitle2.classList.add('active1')
+  headerCategoryTitle3.classList.remove('active1')
+  headerCategoryTitle4.classList.remove('active1')
+}
+
+headerCategoryTitle3.onclick = function () {
+  headerCategoryTitle1.classList.remove('active1')
+  headerCategoryTitle2.classList.remove('active1')
+  headerCategoryTitle3.classList.add('active1')
+  headerCategoryTitle4.classList.remove('active1')
+}
+
+headerCategoryTitle4.onclick = function () {
+  headerCategoryTitle1.classList.remove('active1')
+  headerCategoryTitle2.classList.remove('active1')
+  headerCategoryTitle3.classList.remove('active1')
+  headerCategoryTitle4.classList.add('active1')
+}
 
 // OUT-CATEGORY
 const headerCategory1 = document.querySelector('.line-swiper1__item--1');

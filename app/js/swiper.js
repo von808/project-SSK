@@ -1,11 +1,13 @@
 // SWIPERS
 var swiper = new Swiper(".bigSwiper1", {
+  a11y: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
 var swiper = new Swiper(".miniSwiper1", {
+  a11y: false,
   slidesPerView: 1,
   breakpoints: {
     768: {
@@ -23,6 +25,7 @@ var swiper = new Swiper(".miniSwiper1", {
   },
 });
 var swiper = new Swiper(".lineSwiper1", {
+  a11y: false,
   slidesPerView: 1.7,
   spaceBetween: 16,
   breakpoints: {
@@ -56,6 +59,7 @@ var swiper = new Swiper(".lineSwiper1", {
   },
 });
 var swiper = new Swiper(".popular .lineSwiper1", {
+  a11y: false,
   slidesPerView: 1.9,
   spaceBetween: 16,
   breakpoints: {
@@ -89,6 +93,7 @@ var swiper = new Swiper(".popular .lineSwiper1", {
   },
 });
 var swiper = new Swiper(".lineSwiper2", {
+  a11y: false,
   slidesPerView: 1.1,
   spaceBetween: 16,
   breakpoints: {
@@ -114,6 +119,7 @@ var swiper = new Swiper(".lineSwiper2", {
   },
 });
 var swiper = new Swiper(".brandsSwiper", {
+  a11y: false,
   slidesPerView: 2.4,
   spaceBetween: 16,
   freeMode: true,
