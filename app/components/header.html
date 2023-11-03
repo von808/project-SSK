@@ -1,1002 +1,279 @@
-<header class="header">
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar__inner">
-        <div class="topbar__left">
-          <div class="droplist topbar__city">
-            <div class="droplist-control">
-              <span>Санкт-Петербург</span>
-              <svg class="down-compact">
-                <use xlink:href="#down-compact"></use>
-              </svg>
-            </div>
-            <div class="droplist-list">
-              <form class="form droplist__form">
-                <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
-                <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
-                <div class="form__input-box">
-                  <span class="input-overlay-disabled"></span>
-                  <input class="form__input droplist__form-input" type="search" placeholder=" ">
-                  <label class="form__label">Город</label>
-                  <button>
-                    <svg class="search__icon">
-                      <use xlink:href="#search-lg"></use>
-                    </svg>
-                  </button>
+<link rel="stylesheet" href="libs/slick/slick-theme.css">
+<link rel="stylesheet" href="libs/slick/slick.css">
+<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="libs/noUiSlider/nouislider.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--=include sprite.html-->
+  <div class="wrapper">
+    <div class="overlay-full"></div>
+    <header class="header">
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar__inner">
+            <div class="topbar__left">
+              <div class="droplist topbar__city">
+                <div class="droplist-control" id="overlay-activeQWE">
+                  <span>Санкт-Петербург</span>
+                  <svg class="down-compact">
+                    <use xlink:href="#down-compact"></use>
+                  </svg>
                 </div>
-              </form>
-              <ul class="droplist-list__items">
-                <li class="droplist-list__item">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
+                <div class="droplist-list">
+                  <form class="form droplist__form">
+                    <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
+                    <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input droplist__form-input" type="search" placeholder=" ">
+                      <label class="form__label">Город</label>
+                      <button>
+                        <svg class="search__icon">
+                          <use xlink:href="#search-lg"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                  <ul class="droplist-list__items">
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Москва и МО</span>
+                    </li>
+                    <li class="droplist-list__item selected">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Санкт-Петербург и ЛО</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Саратов</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Самара</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Сызрань</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Севастополь</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Севастополь</span>
+                    </li>
+                    <li class="droplist-list__item--failed">
+                      <div>
+                        <img src="images/face-sad.svg" alt="face-sad">
+                        <span>Жаль, мы не нашли Ваш город.</span>
+                      </div>
+                      <p>
+                        Если город написан верно, пожалуйста, сообщите нам о недочете.
+                      </p>
+                      <a href="#!">Рассказать администратору</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="topbar__addresses" href="#!">
+                Адреса
+              </a>
+            </div>
+            <nav class="topbar__nav">
+              <div class="droplist-a">
+                <div class="droplist-control">
+                  <span>О компании</span>
+                  <svg class="down-compact">
+                    <use xlink:href="#down-compact"></use>
                   </svg>
-                  <span>Москва и МО</span>
-                </li>
-                <li class="droplist-list__item selected">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
-                  </svg>
-                  <span>Санкт-Петербург и ЛО</span>
-                </li>
-                <li class="droplist-list__item">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
-                  </svg>
-                  <span>Саратов</span>
-                </li>
-                <li class="droplist-list__item">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
-                  </svg>
-                  <span>Самара</span>
-                </li>
-                <li class="droplist-list__item">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
-                  </svg>
-                  <span>Сызрань</span>
-                </li>
-                <li class="droplist-list__item">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
-                  </svg>
-                  <span>Севастополь</span>
-                </li>
-                <li class="droplist-list__item">
-                  <svg class="droplist-check">
-                    <use xlink:href="#selected-check"></use>
-                  </svg>
-                  <span>Севастополь</span>
-                </li>
-                <li class="droplist-list__item--failed">
-                  <div>
-                    <img src="images/face-sad.svg" alt="face-sad">
-                    <span>Жаль, мы не нашли Ваш город.</span>
-                  </div>
-                  <p>
-                    Если город написан верно, пожалуйста, сообщите нам о недочете.
-                  </p>
-                  <a href="#!">Рассказать администратору</a>
-                </li>
-              </ul>
+                </div>
+                <div class="droplist-list">
+                  <ul class="droplist-list__items">
+                    <li class="droplist-list__item">
+                      <a href="#!">О компании</a>
+                    </li>
+                    <li class="droplist-list__item">
+                      <a href="#!">Бренды</a>
+                    </li>
+                    <li class="droplist-list__item">
+                      <a href="#!">Пункты самовывоза</a>
+                    </li>
+                    <li class="droplist-list__item">
+                      <a href="#!">Вакансии</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="topbar__nav-item--link" href="#!">
+                Контакты
+              </a>
+              <a class="topbar__nav-item--link" href="#!">
+                Пресс-центр
+              </a>
+              <a class="topbar__nav-item--link" href="#!">
+                Частные вопросы
+              </a>
+            </nav>
+            <div class="topbar__right">
+              <a class="topbar__loyalty" href="#!">Программа лояльности</a>
+              <a class="topbar__login" href="#!">Войти</a>
             </div>
           </div>
-          <a class="topbar__addresses" href="#!">
-            Адреса
-          </a>
-        </div>
-        <nav class="topbar__nav">
-          <div class="droplist-a">
-            <div class="droplist-control">
-              <span>О компании</span>
-              <svg class="down-compact">
-                <use xlink:href="#down-compact"></use>
-              </svg>
-            </div>
-            <div class="droplist-list">
-              <ul class="droplist-list__items">
-                <li class="droplist-list__item">
-                  <a href="#!">О компании</a>
-                </li>
-                <li class="droplist-list__item">
-                  <a href="#!">Бренды</a>
-                </li>
-                <li class="droplist-list__item">
-                  <a href="#!">Пункты самовывоза</a>
-                </li>
-                <li class="droplist-list__item">
-                  <a href="#!">Вакансии</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a class="topbar__nav-item--link" href="#!">
-            Контакты
-          </a>
-          <a class="topbar__nav-item--link" href="#!">
-            Пресс-центр
-          </a>
-          <a class="topbar__nav-item--link" href="#!">
-            Частные вопросы
-          </a>
-        </nav>
-        <div class="topbar__right">
-          <a class="topbar__loyalty" href="#!">Программа лояльности</a>
-          <a class="topbar__login" href="#!">Войти</a>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="header__inner">
-      <div class="header__left">
-        <a class="logo--link" href="#!">
-          <img class="logo" src="images/logo.svg" alt="logo">
-          <!-- <svg class="logo">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__left">
+            <a class="logo--link" href="#!">
+              <img class="logo" src="images/logo.svg" alt="logo">
+              <!-- <svg class="logo">
             <use xlink:href="#logo"></use>
           </svg> -->
-        </a>
-        <span class="online-marker"></span>
-        <a class="header__phone--link" href="tel:+78003998585">+7 800 399 85 85</a>
-      </div>
-      <nav class="header__nav">
-        <a class="header__nav-item--link" href="#!">
-          Акции
-        </a>
-        <div class="droplist-a">
-          <div class="droplist-control">
-            <span>Покупателям</span>
-            <svg class="down-compact">
-              <use xlink:href="#down-compact"></use>
-            </svg>
+            </a>
+            <span class="online-marker"></span>
+            <a class="header__phone--link" href="tel:+78003998585">+7 800 399 85 85</a>
           </div>
-          <div class="droplist-list">
-            <ul class="droplist-list__items">
-              <li class="droplist-list__item">
-                <a href="#!">Доставка и оплата</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Гарантия и возврат</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Обратная связь</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Бланки заявлений</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="droplist-a">
-          <div class="droplist-control">
-            <span>Для бизнеса</span>
-            <svg class="down-compact">
-              <use xlink:href="#down-compact"></use>
-            </svg>
-          </div>
-          <div class="droplist-list">
-            <ul class="droplist-list__items">
-              <li class="droplist-list__item">
-                <a href="#!">Доставка и оплата</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Гарантия и возврат</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Обратная связь</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Бланки заявлений</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="droplist-a">
-          <div class="droplist-control">
-            <span>Услуги</span>
-            <svg class="down-compact">
-              <use xlink:href="#down-compact"></use>
-            </svg>
-          </div>
-          <div class="droplist-list">
-            <ul class="droplist-list__items">
-              <li class="droplist-list__item">
-                <a href="#!">Доставка и оплата</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Гарантия и возврат</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Обратная связь</a>
-              </li>
-              <li class="droplist-list__item">
-                <a href="#!">Бланки заявлений</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a class="header__nav-item--link" href="#!">
-          <span>Журнал</span>
-        </a>
-      </nav>
-      <div class="header__right">
-        <a class="header__icon-box" href="#!">
-          <div class="btn-icon">
-            <svg class="header__icon">
-              <use xlink:href="#search-lg"></use>
-            </svg>
-          </div>
-        </a>
-        <a class="header__icon-box" href="#!">
-          <div class="btn-icon">
-            <div class="icon-marker">
-              <span>3</span>
-            </div>
-            <svg class="header__icon">
-              <use xlink:href="#scales"></use>
-            </svg>
-          </div>
-        </a>
-        <a class="header__icon-box" href="#!">
-          <div class="btn-icon">
-            <svg class="header__icon">
-              <use xlink:href="#star"></use>
-            </svg>
-          </div>
-        </a>
-        <a class="header__icon-box" href="#!">
-          <div class="btn-icon">
-            <div class="icon-marker">
-              <span>2</span>
-            </div>
-            <svg class="header__icon">
-              <use xlink:href="#shopping-cart"></use>
-            </svg>
-          </div>
-        </a>
-        <a class="header__icon-box burger-btn" href="#!">
-          <div class="btn-icon burger-btn-icon">
-            <svg class="header__icon">
-              <use xlink:href="#burger"></use>
-            </svg>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="header-compact">
-    <div class="container">
-      <div class="header-compact__inner">
-        <span class="header-compact__left btn-white">
-          <svg class="header-compact__icon">
-            <use xlink:href="#dots-grid"></use>
-          </svg>
-        </span>
-        <div class="header-compact__content">
-          <nav class="header-compact__nav">
-            <div class="header-compact__nav-item">
-              <a class="header-compact__nav-item--link header-compact__nav-item--link-1" href="#!">
-                <img src="images/header-compact-1.png" alt="header-compact-1">
-                <span>Сантехника</span>
+          <nav class="header__nav">
+            <a class="header__nav-item--link" href="#!">
+              Акции
+            </a>
+            <div class="droplist-a">
+              <div class="droplist-control">
+                <span>Покупателям</span>
                 <svg class="down-compact">
                   <use xlink:href="#down-compact"></use>
                 </svg>
-              </a>
+              </div>
+              <div class="droplist-list">
+                <ul class="droplist-list__items">
+                  <li class="droplist-list__item">
+                    <a href="#!">Доставка и оплата</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Гарантия и возврат</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Обратная связь</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Бланки заявлений</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="header-compact__nav-line"></span>
-            <div class="header-compact__nav-item">
-              <a class="header-compact__nav-item--link header-compact__nav-item--link-2" href="#!">
-                <img src="images/header-compact-2.png" alt="header-compact-2">
-                <span>Климат</span>
+            <div class="droplist-a">
+              <div class="droplist-control">
+                <span>Для бизнеса</span>
                 <svg class="down-compact">
                   <use xlink:href="#down-compact"></use>
                 </svg>
-              </a>
+              </div>
+              <div class="droplist-list">
+                <ul class="droplist-list__items">
+                  <li class="droplist-list__item">
+                    <a href="#!">Доставка и оплата</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Гарантия и возврат</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Обратная связь</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Бланки заявлений</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="header-compact__nav-line"></span>
-            <div class="header-compact__nav-item">
-              <a class="header-compact__nav-item--link header-compact__nav-item--link-3" href="#!">
-                <img src="images/header-compact-3.png" alt="header-compact-3">
-                <span>Освещение</span>
+            <div class="droplist-a">
+              <div class="droplist-control">
+                <span>Услуги</span>
                 <svg class="down-compact">
                   <use xlink:href="#down-compact"></use>
                 </svg>
-              </a>
+              </div>
+              <div class="droplist-list">
+                <ul class="droplist-list__items">
+                  <li class="droplist-list__item">
+                    <a href="#!">Доставка и оплата</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Гарантия и возврат</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Обратная связь</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Бланки заявлений</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="header-compact__nav-line"></span>
-            <div class="header-compact__nav-item">
-              <a class="header-compact__nav-item--link header-compact__nav-item--link-4" href="#!">
-                <img src="images/header-compact-4.png" alt="header-compact-4">
-                <span>Лепнина</span>
-                <svg class="down-compact">
-                  <use xlink:href="#down-compact"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="header__nav-item--link" href="#!">
+              <span>Журнал</span>
+            </a>
           </nav>
-          <div class="header-compact__right">
-            105 752 товара
-          </div>
-        </div>
-      </div>
-      <div class="catalog">
-        <div class="catalog__left">
-          <div class="catalog__left-items">
-            <a class="catalog__left-item selected" href="#!">
-              <span>Сантехника</span>
-              <svg class="down-compact">
-                <use xlink:href="#down-compact"></use>
-              </svg>
+          <div class="header__right">
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <svg class="header__icon">
+                  <use xlink:href="#search-lg"></use>
+                </svg>
+              </div>
             </a>
-            <a class="catalog__left-item" href="#!">
-              <span>Климат</span>
-              <svg class="down-compact">
-                <use xlink:href="#down-compact"></use>
-              </svg>
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <div class="icon-marker">
+                  <span>3</span>
+                </div>
+                <svg class="header__icon">
+                  <use xlink:href="#scales"></use>
+                </svg>
+              </div>
             </a>
-            <a class="catalog__left-item" href="#!">
-              <span>Освещение</span>
-              <svg class="down-compact">
-                <use xlink:href="#down-compact"></use>
-              </svg>
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <svg class="header__icon">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
             </a>
-            <a class="catalog__left-item" href="#!">
-              <span>Лепнина</span>
-              <svg class="down-compact">
-                <use xlink:href="#down-compact"></use>
-              </svg>
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <div class="icon-marker">
+                  <span>2</span>
+                </div>
+                <svg class="header__icon">
+                  <use xlink:href="#shopping-cart"></use>
+                </svg>
+              </div>
             </a>
-          </div>
-          <div class="catalog__left-offer">
-            <div class="catalog__left-offer-head">
-              <h5 class="catalog__title">Категории</h5>
-            </div>
-            <div class="catalog__left-offer-body">
-              <img class="catalog__left-offer-img" src="images/offer-img.jpg" alt="offer">
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content catalog__content--inner">
-          <div class="catalog__category">
-            <div class="catalog__category-head">
-              <h5 class="catalog__title">Категории</h5>
-            </div>
-            <div class="catalog__category-body">
-
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
+            <a class="header__icon-box burger-btn" href="#!">
+              <div class="btn-icon burger-btn-icon">
+                <svg class="header__icon">
+                  <use xlink:href="#burger"></use>
+                </svg>
               </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Ванны</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Унитазы</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Инталяция</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Ванны</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Унитазы</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Инталяция</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Ванны</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Унитазы</a>
-              </div>
-              <div class="line-swiper1__item">
-                <a class="line-swiper1__img-box" href="#!">
-                  <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-                </a>
-                <a class="line-swiper1__title" href="#!">Инталяция</a>
-              </div>
-
-            </div>
-          </div>
-          <div class="catalog__brands">
-            <div class="catalog__brands-head">
-              <h5 class="catalog__title">Бренды</h5>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Aquaton
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Aqwella
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Geberit
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                JacobDelafon
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Hansgrohe
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Remer
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Roca
-              </a>
-            </div>
-            <div class="catalog__brands-items">
-              <a class="catalog__brands-item" href="#!">
-                Villeroy Boch
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="catalog__content catalog__content--1">
-        <div class="catalog__category">
-          <div class="catalog__category-head">
-            <h5 class="catalog__title">Категории</h5>
-          </div>
-          <div class="catalog__category-body">
-
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="catalog__brands">
-          <div class="catalog__brands-head">
-            <h5 class="catalog__title">Бренды</h5>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aquaton
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aqwella
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Geberit
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              JacobDelafon
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Hansgrohe
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Remer
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Roca
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Villeroy Boch
             </a>
           </div>
         </div>
       </div>
-      <div class="catalog__content catalog__content--2">
-        <div class="catalog__category">
-          <div class="catalog__category-head">
-            <h5 class="catalog__title">Категории</h5>
-          </div>
-          <div class="catalog__category-body">
 
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="catalog__brands">
-          <div class="catalog__brands-head">
-            <h5 class="catalog__title">Бренды</h5>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aqwella
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aquaton
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Geberit
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              JacobDelafon
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Hansgrohe
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Remer
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Roca
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Villeroy Boch
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="catalog__content catalog__content--3">
-        <div class="catalog__category">
-          <div class="catalog__category-head">
-            <h5 class="catalog__title">Категории</h5>
-          </div>
-          <div class="catalog__category-body">
-
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="catalog__brands">
-          <div class="catalog__brands-head">
-            <h5 class="catalog__title">Бренды</h5>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Geberit
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aqwella
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aquaton
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              JacobDelafon
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Hansgrohe
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Remer
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Roca
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Villeroy Boch
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="catalog__content catalog__content--4">
-        <div class="catalog__category">
-          <div class="catalog__category-head">
-            <h5 class="catalog__title">Категории</h5>
-          </div>
-          <div class="catalog__category-body">
-
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-1.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Мебель для ванной</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-2.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Ванны</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-3.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Унитазы</a>
-            </div>
-            <div class="line-swiper1__item">
-              <a class="line-swiper1__img-box" href="#!">
-                <img class="line-swiper1__img" src="images/line-swiper-1-4.png" alt="line-swiper">
-              </a>
-              <a class="line-swiper1__title" href="#!">Инталяция</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="catalog__brands">
-          <div class="catalog__brands-head">
-            <h5 class="catalog__title">Бренды</h5>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              JacobDelafon
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Geberit
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aqwella
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Aquaton
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Hansgrohe
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Remer
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Roca
-            </a>
-          </div>
-          <div class="catalog__brands-items">
-            <a class="catalog__brands-item" href="#!">
-              Villeroy Boch
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>

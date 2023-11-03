@@ -6,457 +6,453 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instalation</title>
-  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <!--=include header.html-->
+  <!--=include header-compact.html-->
 
-<body>
-  <!--=include sprite.html-->
-  <div class="wrapper">
-    <!--=include burger.html-->
-    <!--=include header.html-->
-    <main class="main">
-      <div class="breadcrumbs">
-        <div class="container">
-          <div class="breadcrumbs__inner">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__list-item">
-                <a class="breadcrumbs__list-link" href="#!">Главная</a>
-              </li>
-              <li class="breadcrumbs__list-item">
-                <a class="breadcrumbs__list-link" href="#!">Услуги</a>
-              </li>
-            </ul>
+  <!--=include burger.html-->
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#!">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#!">Услуги</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="page-title" style="margin: 0;">
+      <div class="container">
+        <div class="page-title__inner page-title--top">
+          <h1 class="page-title__title">Установка</h1>
+        </div>
+      </div>
+    </section>
+    <section class="banner-unavailable">
+      <div class="container">
+        <div class="banner-unavailable__inner">
+          <h2 class="banner-unavailable__title">К сожалению, услуга недоступна в вашем городе</h2>
+          <div class="droplist">
+            <div class="droplist-control">
+              <span>Города, где доступна услуга</span>
+              <svg class="down-compact">
+                <use xlink:href="#down-compact"></use>
+              </svg>
+            </div>
+            <div class="droplist-list">
+              <form class="form droplist__form">
+                <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
+                <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
+                <div class="form__input-box">
+                  <span class="input-overlay-disabled"></span>
+                  <input class="form__input droplist__form-input" type="search" placeholder=" ">
+                  <label class="form__label">Поиск</label>
+                  <button>
+                    <svg class="search__icon">
+                      <use xlink:href="#search-lg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <ul class="droplist-list__items">
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Нижний Новгород</span>
+                </li>
+                <li class="droplist-list__item selected">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Великий Новгород</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новороссийск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новосибирск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новомосковск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новочеркасск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Нижний Новгород</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Великий Новгород</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новороссийск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новосибирск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новомосковск</span>
+                </li>
+                <li class="droplist-list__item">
+                  <svg class="droplist-check">
+                    <use xlink:href="#selected-check"></use>
+                  </svg>
+                  <span>Новочеркасск</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <section class="page-title" style="margin: 0;">
-        <div class="container">
-          <div class="page-title__inner">
-            <h1 class="page-title__title">Установка</h1>
+    </section>
+    <section class="cover">
+      <div class="cover__card">
+        <div class="cover__card-content">
+          <h3 class="cover__card-title">
+            Поможем с установкой
+            и дадим гарантию
+          </h3>
+          <p class="cover__card-descr">
+            Опытные мастера сделают всю работу, а вам останется наслаждаться качеством.
+          </p>
+          <a class="cover__card-btn btn-blue" href="#!">Перезвоните мне</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cover__inner">
+          <img class="cover__bg-img" src="images/services-bg-man.png" alt="man">
+          <div class="cover__text">
+            <p>
+              Гарантия 3 месяца с полным возвратом средств
+            </p>
+            <p>
+              Можем установить все, где есть галочка в корзине
+            </p>
           </div>
         </div>
-      </section>
-      <section class="banner-unavailable">
-        <div class="container">
-          <div class="banner-unavailable__inner">
-            <h2 class="banner-unavailable__title">К сожалению, услуга недоступна в вашем городе</h2>
-            <div class="droplist">
-              <div class="droplist-control">
-                <span>Города, где доступна услуга</span>
-                <svg class="down-compact">
-                  <use xlink:href="#down-compact"></use>
+      </div>
+    </section>
+    <section class="how">
+      <div class="container">
+        <div class="how__inner">
+          <h2 class="title how__title">Как это работает</h2>
+          <div class="line-swiper2">
+            <div class="swiper lineSwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="line-swiper2__item">
+                    <div class="line-swiper2__img-box">
+                      <img class="line-swiper2__img" src="images/how-1.png" alt="how">
+                    </div>
+                    <div class="line-swiper2__info">
+                      <h3 class="line-swiper2__title">Добавьте товар в корзину</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper2__item">
+                    <div class="line-swiper2__img-box">
+                      <img class="line-swiper2__img" src="images/how-2.png" alt="how">
+                    </div>
+                    <div class="line-swiper2__info">
+                      <h3 class="line-swiper2__title">Поставьте галочку «Требуется монтаж»</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper2__item">
+                    <div class="line-swiper2__img-box">
+                      <img class="line-swiper2__img" src="images/how-3.png" alt="how">
+                    </div>
+                    <div class="line-swiper2__info">
+                      <h3 class="line-swiper2__title">Согласуйте детали и время визита</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper2__item">
+                    <div class="line-swiper2__img-box">
+                      <img class="line-swiper2__img" src="images/how-4.png" alt="how">
+                    </div>
+                    <div class="line-swiper2__info">
+                      <h3 class="line-swiper2__title">Встретьте мастера и наслаждайтесь</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="guarantee">
+      <div class="container">
+        <div class="guarantee__inner">
+          <h2 class="title guarantee__title">Гарантия</h2>
+          <div class="guarantee__content">
+            <div class="guarantee__img-box">
+              <img class="guarantee__img" src="images/guarantee.jpg" alt="guarantee">
+              <img class="guarantee__img-mark" src="images/guarantee-mark.svg" alt="guarantee-mark">
+            </div>
+            <div class="guarantee__text">
+              <p>
+                Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний представлены в
+                исключительно положительном
+                свете. В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности
+                являются только
+                методом политического участия и обнародованы.
+              </p>
+              <span class="guarantee__month">3 месяца</span>
+              <img class="guarantee__img-label" src="images/guarantee-label.png" alt="guarantee-label">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services-gallery">
+      <div class="container">
+        <div class="services-gallery__inner">
+          <div class="services-gallery__items">
+            <a class="services-gallery__item services-gallery__item--1" href="#!">
+              <img class="services-gallery__img" src="images/services-gallery-1.jpg" alt="gallery">
+            </a>
+            <a class="services-gallery__item services-gallery__item--2" href="#!">
+              <img class="services-gallery__img" src="images/services-gallery-2.jpg" alt="gallery">
+            </a>
+            <a class="services-gallery__item services-gallery__item--3" href="#!">
+              <img class="services-gallery__img" src="images/services-gallery-3.jpg" alt="gallery">
+            </a>
+            <a class="services-gallery__item services-gallery__item--4" href="#!">
+              <img class="services-gallery__img" src="images/services-gallery-4.jpg" alt="gallery">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="target">
+      <div class="container">
+        <div class="target__inner">
+          <div class="target-box">
+            <div class="target__item target-box__item-1">
+              <h3 class="target-box__title">
+                В корзине есть
+                <a href="#!">2 товара</a>
+              </h3>
+              <label class="checkbox-label">
+                <input class="input-hidden checkbox-input" type="checkbox">
+                <div class="checkbox-box">
+                  <svg class="checkbox-check">
+                    <use xlink:href="#checkbox-check"></use>
+                  </svg>
+                </div>
+                <span>Монтаж для всех <span>+7 350₽</span></span>
+              </label>
+            </div>
+            <div class="target__item target-box__item-2">
+              <p>
+                Которые подходят для услуги установки. Перейдите в корзину и поставьте галочку «Требуется монтаж»
+              </p>
+              <a class="target-box__btn btn-blue" href="#!">Перейти в корзину</a>
+            </div>
+          </div>
+          <div class="target__call-me">
+            <div class="target__item target__call-me-box">
+              <p>
+                Если вам необходимо уточнить какие-то детали, то обратитесь на линию:
+              </p>
+              <div class="target__number-box">
+                <a class="target__number" href="tel:+78003998585">+7 800 399 85 85</a>
+                <span>24/7</span>
+              </div>
+              <a class="target__call-me-btn btn-white" href="#!">Перезвоните мне</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <div class="faq__inner">
+          <div class="faq__head">
+            <h2 class="title faq__title">Частые вопросы</h2>
+            <span>Установка</span>
+            <p>
+              Мы собрали самые частые вопросы по услуге «Установка», чтобы сэкономить ваше время. Если остались
+              вопросы — свяжитесь с
+              нами.
+            </p>
+          </div>
+          <div class="faq__items">
+            <div class="faq__item">
+              <div class="faq__item-head">
+                <span>Входит ли в установку демонтаж?</span>
+                <svg class="chevron-right">
+                  <use xlink:href="#chevron-right"></use>
                 </svg>
               </div>
-              <div class="droplist-list">
-                <form class="form droplist__form">
-                  <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
-                  <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
-                  <div class="form__input-box">
-                    <span class="input-overlay-disabled"></span>
-                    <input class="form__input droplist__form-input" type="search" placeholder=" ">
-                    <label class="form__label">Поиск</label>
-                    <button>
-                      <svg class="search__icon">
-                        <use xlink:href="#search-lg"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </form>
-                <ul class="droplist-list__items">
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Нижний Новгород</span>
-                  </li>
-                  <li class="droplist-list__item selected">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Великий Новгород</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новороссийск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новосибирск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новомосковск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новочеркасск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Нижний Новгород</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Великий Новгород</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новороссийск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новосибирск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новомосковск</span>
-                  </li>
-                  <li class="droplist-list__item">
-                    <svg class="droplist-check">
-                      <use xlink:href="#selected-check"></use>
-                    </svg>
-                    <span>Новочеркасск</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cover">
-        <div class="cover__card">
-          <div class="cover__card-content">
-            <h3 class="cover__card-title">
-              Поможем с установкой
-              и дадим гарантию
-            </h3>
-            <p class="cover__card-descr">
-              Опытные мастера сделают всю работу, а вам останется наслаждаться качеством.
-            </p>
-            <a class="cover__card-btn btn-blue" href="#!">Перезвоните мне</a>
-          </div>
-        </div>
-        <div class="container">
-          <div class="cover__inner">
-            <img class="cover__bg-img" src="images/services-bg-man.png" alt="man">
-            <div class="cover__text">
-              <p>
-                Гарантия 3 месяца с полным возвратом средств
-              </p>
-              <p>
-                Можем установить все, где есть галочка в корзине
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="how">
-        <div class="container">
-          <div class="how__inner">
-            <h2 class="title how__title">Как это работает</h2>
-            <div class="line-swiper2">
-              <div class="swiper lineSwiper2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="line-swiper2__item">
-                      <div class="line-swiper2__img-box">
-                        <img class="line-swiper2__img" src="images/how-1.png" alt="how">
-                      </div>
-                      <div class="line-swiper2__info">
-                        <h3 class="line-swiper2__title">Добавьте товар в корзину</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="line-swiper2__item">
-                      <div class="line-swiper2__img-box">
-                        <img class="line-swiper2__img" src="images/how-2.png" alt="how">
-                      </div>
-                      <div class="line-swiper2__info">
-                        <h3 class="line-swiper2__title">Поставьте галочку «Требуется монтаж»</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="line-swiper2__item">
-                      <div class="line-swiper2__img-box">
-                        <img class="line-swiper2__img" src="images/how-3.png" alt="how">
-                      </div>
-                      <div class="line-swiper2__info">
-                        <h3 class="line-swiper2__title">Согласуйте детали и время визита</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="line-swiper2__item">
-                      <div class="line-swiper2__img-box">
-                        <img class="line-swiper2__img" src="images/how-4.png" alt="how">
-                      </div>
-                      <div class="line-swiper2__info">
-                        <h3 class="line-swiper2__title">Встретьте мастера и наслаждайтесь</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-scrollbar"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="guarantee">
-        <div class="container">
-          <div class="guarantee__inner">
-            <h2 class="title guarantee__title">Гарантия</h2>
-            <div class="guarantee__content">
-              <div class="guarantee__img-box">
-                <img class="guarantee__img" src="images/guarantee.jpg" alt="guarantee">
-                <img class="guarantee__img-mark" src="images/guarantee-mark.svg" alt="guarantee-mark">
-              </div>
-              <div class="guarantee__text">
+              <div class="faq__item-body">
                 <p>
-                  Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний представлены в
-                  исключительно положительном
-                  свете. В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности
-                  являются только
-                  методом политического участия и обнародованы.
+                  Да, демонтаж старого сантехнического оборудования включен в стоимость, в отличии от других компаний
+                  мы стремимся дать
+                  высокий сервис своим клиентам, чтобы вы видели сразу окончательную цену без подводных камней.
                 </p>
-                <span class="guarantee__month">3 месяца</span>
-                <img class="guarantee__img-label" src="images/guarantee-label.png" alt="guarantee-label">
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="services-gallery">
-        <div class="container">
-          <div class="services-gallery__inner">
-            <div class="services-gallery__items">
-              <a class="services-gallery__item services-gallery__item--1" href="#!">
-                <img class="services-gallery__img" src="images/services-gallery-1.jpg" alt="gallery">
-              </a>
-              <a class="services-gallery__item services-gallery__item--2" href="#!">
-                <img class="services-gallery__img" src="images/services-gallery-2.jpg" alt="gallery">
-              </a>
-              <a class="services-gallery__item services-gallery__item--3" href="#!">
-                <img class="services-gallery__img" src="images/services-gallery-3.jpg" alt="gallery">
-              </a>
-              <a class="services-gallery__item services-gallery__item--4" href="#!">
-                <img class="services-gallery__img" src="images/services-gallery-4.jpg" alt="gallery">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="target">
-        <div class="container">
-          <div class="target__inner">
-            <div class="target-box">
-              <div class="target__item target-box__item-1">
-                <h3 class="target-box__title">
-                  В корзине есть
-                  <a href="#!">2 товара</a>
-                </h3>
-                <label class="checkbox-label">
-                  <input class="input-hidden checkbox-input" type="checkbox">
-                  <div class="checkbox-box">
-                    <svg class="checkbox-check">
-                      <use xlink:href="#checkbox-check"></use>
-                    </svg>
-                  </div>
-                  <span>Монтаж для всех <span>+7 350₽</span></span>
-                </label>
+            <div class="faq__item">
+              <div class="faq__item-head">
+                <span>Будут ли у мастера инструменты и расходные материалы для проведения работ?</span>
+                <svg class="chevron-right">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
               </div>
-              <div class="target__item target-box__item-2">
+              <div class="faq__item-body">
                 <p>
-                  Которые подходят для услуги установки. Перейдите в корзину и поставьте галочку «Требуется монтаж»
+                  Наш мастер приезжает на объект с полным набором инструментов и расходных материалов, необходимых для
+                  проведения монтажа.
+                  Если при обсуждении заказа по телефону выясняется, что для работ на объекте требуется дополнительное
+                  оборудование, сверх
+                  стандартного комплекта, мастер берет его с собой.
                 </p>
-                <a class="target-box__btn btn-blue" href="#!">Перейти в корзину</a>
               </div>
             </div>
-            <div class="target__call-me">
-              <div class="target__item target__call-me-box">
+            <div class="faq__item">
+              <div class="faq__item-head">
+                <span>Установка производится в тот же день, что и доставка?</span>
+                <svg class="chevron-right">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </div>
+              <div class="faq__item-body">
                 <p>
-                  Если вам необходимо уточнить какие-то детали, то обратитесь на линию:
+                  Дата и время установки напрямую зависят от времени доставки товара и наличия свободного мастера. Как
+                  правило, установка
+                  производится в день отгрузки товара. В ином случае на следующий день после доставки товара или в
+                  любой удобный для
+                  клиента день.
                 </p>
-                <div class="target__number-box">
-                  <a class="target__number" href="tel:+78003998585">+7 800 399 85 85</a>
-                  <span>24/7</span>
-                </div>
-                <a class="target__call-me-btn btn-white" href="#!">Перезвоните мне</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="faq">
-        <div class="container">
-          <div class="faq__inner">
-            <div class="faq__head">
-              <h2 class="title faq__title">Частые вопросы</h2>
-              <span>Установка</span>
-              <p>
-                Мы собрали самые частые вопросы по услуге «Установка», чтобы сэкономить ваше время. Если остались
-                вопросы — свяжитесь с
-                нами.
-              </p>
+            <div class="faq__item">
+              <div class="faq__item-head">
+                <span>Когда может приехать мастер?</span>
+                <svg class="chevron-right">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </div>
+              <div class="faq__item-body">
+                <p>
+                  Наши мастера работают с 09:00 до 21:00. При необходимости (по договоренности с клиентом) могут
+                  задержаться на объекте.
+                </p>
+              </div>
             </div>
-            <div class="faq__items">
-              <div class="faq__item">
-                <div class="faq__item-head">
-                  <span>Входит ли в установку демонтаж?</span>
-                  <svg class="chevron-right">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </div>
-                <div class="faq__item-body">
-                  <p>
-                    Да, демонтаж старого сантехнического оборудования включен в стоимость, в отличии от других компаний
-                    мы стремимся дать
-                    высокий сервис своим клиентам, чтобы вы видели сразу окончательную цену без подводных камней.
-                  </p>
-                </div>
+            <div class="faq__item">
+              <div class="faq__item-head">
+                <span>Выезжает ли мастер за МКАД?</span>
+                <svg class="chevron-right">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
               </div>
-              <div class="faq__item">
-                <div class="faq__item-head">
-                  <span>Будут ли у мастера инструменты и расходные материалы для проведения работ?</span>
-                  <svg class="chevron-right">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </div>
-                <div class="faq__item-body">
-                  <p>
-                    Наш мастер приезжает на объект с полным набором инструментов и расходных материалов, необходимых для
-                    проведения монтажа.
-                    Если при обсуждении заказа по телефону выясняется, что для работ на объекте требуется дополнительное
-                    оборудование, сверх
-                    стандартного комплекта, мастер берет его с собой.
-                  </p>
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item-head">
-                  <span>Установка производится в тот же день, что и доставка?</span>
-                  <svg class="chevron-right">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </div>
-                <div class="faq__item-body">
-                  <p>
-                    Дата и время установки напрямую зависят от времени доставки товара и наличия свободного мастера. Как
-                    правило, установка
-                    производится в день отгрузки товара. В ином случае на следующий день после доставки товара или в
-                    любой удобный для
-                    клиента день.
-                  </p>
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item-head">
-                  <span>Когда может приехать мастер?</span>
-                  <svg class="chevron-right">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </div>
-                <div class="faq__item-body">
-                  <p>
-                    Наши мастера работают с 09:00 до 21:00. При необходимости (по договоренности с клиентом) могут
-                    задержаться на объекте.
-                  </p>
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item-head">
-                  <span>Выезжает ли мастер за МКАД?</span>
-                  <svg class="chevron-right">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </div>
-                <div class="faq__item-body">
-                  <p>
-                    Да, наши мастера выезжают за пределы МКАД. Стоимость такого выезда не входит в стоимость услуги по
-                    установке и
-                    оплачивается отдельно, по тарифу 30 рублей за 1 км. В случае особо отдаленных объектов выезд и
-                    оплата обсуждаются
-                    отдельно.
+              <div class="faq__item-body">
+                <p>
+                  Да, наши мастера выезжают за пределы МКАД. Стоимость такого выезда не входит в стоимость услуги по
+                  установке и
+                  оплачивается отдельно, по тарифу 30 рублей за 1 км. В случае особо отдаленных объектов выезд и
+                  оплата обсуждаются
+                  отдельно.
 
-                  </p>
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item-head">
-                  <span>Сколько будет стоить работа мастера?</span>
-                  <svg class="chevron-right">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </div>
-                <div class="faq__item-body">
-                  <p>
-                    С примерными расценками на услуги можно ознакомиться на сайте, а точную стоимость работ определяет
-                    мастер при
-                    согласовании заказа по телефону, только после того как получит полную информацию об объекте.
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
-            <div class="faq__more">
-              <div class="faq__more-descr">
-                <img class="faq__more-avatar" src="images/faq-avatar.jpg" alt="avatar">
-                <div class="faq__more-info">
-                  <h5 class="faq__more-title">Работаем над качеством!</h5>
-                  <p class="faq__more-text">Мы собрали популярные вопросы в одном месте. Ознакомьтесь со всеми.</p>
-                </div>
+            <div class="faq__item">
+              <div class="faq__item-head">
+                <span>Сколько будет стоить работа мастера?</span>
+                <svg class="chevron-right">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
               </div>
-              <div class="faq__more-btns">
-                <img class="faq__more-decor" src="images/long-arrow.svg" alt="long-arrow">
-                <a class="faq__more-btn btn-blue" href="#!">Частые вопросы</a>
+              <div class="faq__item-body">
+                <p>
+                  С примерными расценками на услуги можно ознакомиться на сайте, а точную стоимость работ определяет
+                  мастер при
+                  согласовании заказа по телефону, только после того как получит полную информацию об объекте.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="seo-text">
-        <div class="container">
-          <div class="seo-text__inner">
-            <p>
-              [SEO ТЕКСТ] Являясь всего лишь частью общей картины, представители современных социальных резервов будут
-              превращены в
-              посмешище, хотя само их существование приносит несомненную пользу обществу. Приятно, граждане, наблюдать,
-              как ключевые
-              особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, объявлены
-              нарушающими
-              общечеловеческие нормы этики и морали. С другой стороны, убеждённость некоторых оппонентов однозначно
-              определяет каждого
-              участника как способного принимать собственные решения касаемо вывода текущих активов .
-            </p>
+          <div class="faq__more">
+            <div class="faq__more-descr">
+              <img class="faq__more-avatar" src="images/faq-avatar.jpg" alt="avatar">
+              <div class="faq__more-info">
+                <h5 class="faq__more-title">Работаем над качеством!</h5>
+                <p class="faq__more-text">Мы собрали популярные вопросы в одном месте. Ознакомьтесь со всеми.</p>
+              </div>
+            </div>
+            <div class="faq__more-btns">
+              <img class="faq__more-decor" src="images/long-arrow.svg" alt="long-arrow">
+              <a class="faq__more-btn btn-blue" href="#!">Частые вопросы</a>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!--=include footer.html-->
+      </div>
+    </section>
+    <section class="seo-text">
+      <div class="container">
+        <div class="seo-text__inner">
+          <p>
+            [SEO ТЕКСТ] Являясь всего лишь частью общей картины, представители современных социальных резервов будут
+            превращены в
+            посмешище, хотя само их существование приносит несомненную пользу обществу. Приятно, граждане, наблюдать,
+            как ключевые
+            особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, объявлены
+            нарушающими
+            общечеловеческие нормы этики и морали. С другой стороны, убеждённость некоторых оппонентов однозначно
+            определяет каждого
+            участника как способного принимать собственные решения касаемо вывода текущих активов .
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--=include footer.html-->
   </div>
   <script src="libs/swiper/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
+  
   <script src="js/main.js"></script>
-</body>
+  </body>
 
 </html>

@@ -1,7 +1,9 @@
 .about-img {
   margin-bottom: 100px;
 
-  &__inner {}
+  &__inner {
+    margin-top: -44px;
+  }
 
   &__img {
     border-radius: 14px;
@@ -98,7 +100,7 @@
 
   &__item-img {
     width: 100%;
-    height: auto;
+    height: 170px;
     object-fit: cover;
   }
 
@@ -760,7 +762,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 44px;
+    margin: 44px 0;
   }
 
   &__title {
@@ -972,6 +974,7 @@
 }
 
 .vacancy {
+  padding-top: 44px;
   margin-bottom: 100px;
 
   &__head {

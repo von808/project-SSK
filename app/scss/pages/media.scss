@@ -1,17 +1,6 @@
-.page-title {
-  margin-bottom: 44px;
-
-  &__inner {
-    width: 100%;
-    min-height: 99px;
-  }
-
-  &__title {
-    color: var(--content-primary, #272727);
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 55px;
+.page-media {
+  .page-title {
+    min-height: unset;
   }
 }
 

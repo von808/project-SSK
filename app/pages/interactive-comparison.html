@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocks</title>
+  <!--=include header.html-->
+  <!--=include header-compact.html-->
+
+  <!--=include burger.html-->
+  <main class="main page-comparison">
+    <section class="comparison-head-compact comparison" id="comparison-head-compact">
+      <div class="container">
+        <div class="comparison-head-compact__inner">
+          <div class="comparison-head-compact__content">
+            <button class="top-up" id="top-up">
+              <span class="top-up__text">Вверх</span>
+              <svg class="chevron-right">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+            <div class="comparison-head-compact__slides comparison__head-slides">
+              <div class="comparison-head-compact__slide comparison__slide-width">
+                <div class="img-pointer__card-img-box">
+                  <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                </div>
+                <div class="img-pointer__card-info">
+                  <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                  <span class="img-pointer__card-info-price">999 999 ₽/шт</span>
+                  <button class="img-pointer__card-info-delete">Удалить</button>
+                </div>
+              </div>
+              <div class="comparison-head-compact__slide comparison__slide-width">
+                <div class="img-pointer__card-img-box">
+                  <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                </div>
+                <div class="img-pointer__card-info img-pointer__card-info--sale">
+                  <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                  <span class="img-pointer__card-info-sale">-99%</span>
+                  <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                  <span class="img-pointer__card-info-price">999 999 ₽/шт</span>
+                  <button class="img-pointer__card-info-delete">Удалить</button>
+                </div>
+              </div>
+              <div class="comparison-head-compact__slide comparison__slide-width">
+                <div class="img-pointer__card-img-box">
+                  <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                </div>
+                <div class="img-pointer__card-info">
+                  <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                  <span class="img-pointer__card-info-price">999 999 ₽/шт</span>
+                  <button class="img-pointer__card-info-delete">Удалить</button>
+                </div>
+              </div>
+              <div class="comparison-head-compact__slide comparison__slide-width">
+                <div class="img-pointer__card-img-box">
+                  <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                </div>
+                <div class="img-pointer__card-info img-pointer__card-info--sale">
+                  <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                  <span class="img-pointer__card-info-sale">-99%</span>
+                  <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                  <span class="img-pointer__card-info-price">999 999 ₽/шт</span>
+                  <button class="img-pointer__card-info-delete">Удалить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands favorites" id="qwe">
+      <div class="container">
+        <div class="brands__inner">
+          <div class="brand__head">
+            <h2 class="brand__title">Сравнение</h2>
+            <span class="brand__subtitle">10 товаров</span>
+          </div>
+          <div class="brands__content">
+            <div class="brands__tabs-switch">
+              <div class="brands__tabs-btns">
+                <button class="brands__tabs-btn btn-white" data-tab="#brands-tab_1">Все</button>
+                <button class="brands__tabs-btn btn-white" data-tab="#brands-tab_2">Смесители для ванной</button>
+                <button class="brands__tabs-btn btn-white" data-tab="#brands-tab_3">Смесители для кухни</button>
+                <button class="brands__tabs-btn btn-white" data-tab="#brands-tab_4">Тумбы с раковиной</button>
+              </div>
+            </div>
+            <div class="category-reset">
+              <button class="category-reset__btn popup-open" data-path="popup-category-reset">Очистить категорию
+                Все</button>
+              <span class="category-reset__marker">(5)</span>
+              <div class="modals">
+                <div class="modal modal-category-reset" data-target="popup-category-reset">
+                  <div class="category-reset__modal-box">
+                    <div class="category-reset__modal-box--head">
+                      <button class="category-reset__btn">Очистить категорию Все</button>
+                      <span class="category-reset__marker">(5)</span>
+                    </div>
+                    <div class="category-reset__modal-box--body">
+                      <div class="category-reset__modal-body-qa">
+                        <img src="images/delete.svg" alt="delete">
+                        <span>Вы уверены?</span>
+                      </div>
+                      <span class="category-reset__modal-body-info">
+                        Изменение нельзя будет отменить.
+                      </span>
+                      <div class="category-reset__modal-body-btns">
+                        <button class="category-reset__modal-body-back btn-blue popup-close">Назад</button>
+                        <button class="category-reset__modal-body-reset">Очистить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modals-tooltip">
+                    Нажмите в любом месте, чтобы
+                    <button class="popup-close">закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Показать только различия</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comparison" id="brands-tab_1">
+      <div class="container">
+        <div class="comparison-head">
+          <div class="comparison-head__inner">
+            <div class="comparison__ad">
+              <img class="comparison__ad-img" src="images/ad.jpg" alt="ad">
+            </div>
+            <div class="comparison__head-slides popular">
+              <div class="line-swiper1__item comparison__slide-width">
+                <div class="line-swiper1__img-box">
+                  <div class="sale-boxes">
+                    <div class="gift-box">
+                      <svg class="gift">
+                        <use xlink:href="#gift"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <a href="#!" class="product__image">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img">
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  </a>
+                </div>
+                <a class="line-swiper1__title" href="#!">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                  1A214402Bac20</a>
+                <div class="line-swiper1__bottom">
+                  <span class="line-swiper1__item-price"><span>6 680</span> ₽/шт</span>
+                  <a class="line-swiper1__item-favorite" href="#!">
+                    <svg class="favorite">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="line-swiper1__delete-box">
+                  <button class="line-swiper1__delete btn-white">Удалить</button>
+                </div>
+              </div>
+              <div class="line-swiper1__item comparison__slide-width">
+                <div class="line-swiper1__img-box">
+                  <div class="sale-boxes">
+                    <div class="gift-box">
+                      <svg class="gift">
+                        <use xlink:href="#gift"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <a href="#!" class="product__image">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img">
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  </a>
+                </div>
+                <a class="line-swiper1__title" href="#!">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                  1A214402Bac20</a>
+                <div class="line-swiper1__bottom">
+                  <span class="line-swiper1__item-price"><span>6 680</span> ₽/шт</span>
+                  <a class="line-swiper1__item-favorite" href="#!">
+                    <svg class="favorite">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="line-swiper1__delete-box">
+                  <button class="line-swiper1__delete btn-white">Удалить</button>
+                </div>
+              </div>
+              <div class="line-swiper1__item comparison__slide-width">
+                <div class="line-swiper1__img-box">
+                  <div class="sale-boxes">
+                    <div class="gift-box">
+                      <svg class="gift">
+                        <use xlink:href="#gift"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <a href="#!" class="product__image">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img">
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  </a>
+                </div>
+                <a class="line-swiper1__title" href="#!">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                  1A214402Bac20</a>
+                <div class="line-swiper1__bottom">
+                  <span class="line-swiper1__item-price"><span>6 680</span> ₽/шт</span>
+                  <a class="line-swiper1__item-favorite" href="#!">
+                    <svg class="favorite">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="line-swiper1__delete-box">
+                  <button class="line-swiper1__delete btn-white">Удалить</button>
+                </div>
+              </div>
+              <div class="line-swiper1__item comparison__slide-width">
+                <div class="line-swiper1__img-box">
+                  <div class="sale-boxes">
+                    <div class="gift-box">
+                      <svg class="gift">
+                        <use xlink:href="#gift"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <a href="#!" class="product__image">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img">
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img">
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  </a>
+                </div>
+                <a class="line-swiper1__title" href="#!">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                  1A214402Bac20</a>
+                <div class="line-swiper1__bottom">
+                  <span class="line-swiper1__item-price"><span>6 680</span> ₽/шт</span>
+                  <a class="line-swiper1__item-favorite" href="#!">
+                    <svg class="favorite">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="line-swiper1__delete-box">
+                  <button class="line-swiper1__delete btn-white">Удалить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="manage__cat">
+          <button class="manage__cat-btn">Показать все</button>
+          <button class="manage__cat-btn">Габариты</button>
+          <button class="manage__cat-btn">Внешний вид</button>
+          <button class="manage__cat-btn">Исполнение</button>
+          <button class="manage__cat-btn">Особенности</button>
+          <button class="manage__cat-btn">Оснащение</button>
+          <button class="manage__cat-btn">Материал</button>
+        </div>
+        <div class="comparison__chars">
+          <div class="comparison__char">
+            <h4 class="comparison__char-title">Габариты</h4>
+            <div class="comparison__char-items">
+              <ul class="comparison__char-list comparison__char-list--descr">
+                <li class="comparison__char-list-item">Ширина</li>
+                <li class="comparison__char-list-item">Высота</li>
+                <li class="comparison__char-list-item">Глубина</li>
+                <li class="comparison__char-list-item">Вес</li>
+              </ul>
+              <div class="comparison__char-slides">
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Ширина</span>65 см</li>
+                  <li class="comparison__char-list-item"><span>Высота</span>52 см</li>
+                  <li class="comparison__char-list-item"><span>Глубина</span>44 см</li>
+                  <li class="comparison__char-list-item"><span>Вес</span>47,1 кг</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Ширина</span>65 см</li>
+                  <li class="comparison__char-list-item"><span>Высота</span>52 см</li>
+                  <li class="comparison__char-list-item"><span>Глубина</span>44 см</li>
+                  <li class="comparison__char-list-item"><span>Вес</span>47,1 кг</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Ширина</span>65 см</li>
+                  <li class="comparison__char-list-item"><span>Высота</span>52 см</li>
+                  <li class="comparison__char-list-item"><span>Глубина</span>44 см</li>
+                  <li class="comparison__char-list-item"><span>Вес</span>47,1 кг</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Ширина</span>65 см</li>
+                  <li class="comparison__char-list-item"><span>Высота</span>52 см</li>
+                  <li class="comparison__char-list-item"><span>Глубина</span>44 см</li>
+                  <li class="comparison__char-list-item"><span>Вес</span>47,1 кг</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="comparison__char">
+            <h4 class="comparison__char-title">Внешний вид</h4>
+            <div class="comparison__char-items">
+              <ul class="comparison__char-list comparison__char-list--descr">
+                <li class="comparison__char-list-item">Цвет мебели</li>
+                <li class="comparison__char-list-item">Название цвета</li>
+                <li class="comparison__char-list-item">Цвет раковины</li>
+                <li class="comparison__char-list-item">Стиль</li>
+                <li class="comparison__char-list-item">Поверхность корпуса</li>
+                <li class="comparison__char-list-item">Поверхность фасада</li>
+              </ul>
+              <div class="comparison__char-slides">
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Цвет мебели</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Название цвета</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Цвет раковины</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Стиль</span>современный / минимализм</li>
+                  <li class="comparison__char-list-item"><span>Поверхность корпуса</span>глянцевая</li>
+                  <li class="comparison__char-list-item"><span>Поверхность фасада</span>глянцевая</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Цвет мебели</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Название цвета</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Цвет раковины</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Стиль</span>современный / минимализм</li>
+                  <li class="comparison__char-list-item"><span>Поверхность корпуса</span>глянцевая</li>
+                  <li class="comparison__char-list-item"><span>Поверхность фасада</span>глянцевая</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Цвет мебели</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Название цвета</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Цвет раковины</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Стиль</span>современный / минимализм</li>
+                  <li class="comparison__char-list-item"><span>Поверхность корпуса</span>глянцевая</li>
+                  <li class="comparison__char-list-item"><span>Поверхность фасада</span>глянцевая</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Цвет мебели</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Название цвета</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Цвет раковины</span>белый</li>
+                  <li class="comparison__char-list-item"><span>Стиль</span>современный / минимализм</li>
+                  <li class="comparison__char-list-item"><span>Поверхность корпуса</span>глянцевая</li>
+                  <li class="comparison__char-list-item"><span>Поверхность фасада</span>глянцевая</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="comparison__char">
+            <h4 class="comparison__char-title">Исполнение</h4>
+            <div class="comparison__char-items">
+              <ul class="comparison__char-list comparison__char-list--descr">
+                <li class="comparison__char-list-item">Вид основания под раковину</li>
+                <li class="comparison__char-list-item">Монтаж основания</li>
+                <li class="comparison__char-list-item">Расположение смесителя</li>
+                <li class="comparison__char-list-item">Вид раковины</li>
+                <li class="comparison__char-list-item">Форма раковины</li>
+                <li class="comparison__char-list-item">Система хранения в основании</li>
+                <li class="comparison__char-list-item">Расположение петель</li>
+                <li class="comparison__char-list-item comparison__char-list-item--2">Готовые отверстия под смеситель
+                  в раковине</li>
+                <li class="comparison__char-list-item comparison__char-list-item--2">Намеченные отверстия под смеситель
+                  в раковине</li>
+                <li class="comparison__char-list-item">Диаметр слива раковины</li>
+                <li class="comparison__char-list-item">Для сифона диаметром</li>
+                <li class="comparison__char-list-item">Гарантия</li>
+                <li class="comparison__char-list-item">Страна</li>
+              </ul>
+              <div class="comparison__char-slides">
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Вид основания под раковину</span>тумба под раковину</li>
+                  <li class="comparison__char-list-item"><span>Монтаж основания</span>подвесной</li>
+                  <li class="comparison__char-list-item"><span>Расположение смесителя</span>посередине</li>
+                  <li class="comparison__char-list-item"><span>Вид раковины</span>накладная (мебельная)</li>
+                  <li class="comparison__char-list-item"><span>Форма раковины</span>прямоугольная</li>
+                  <li class="comparison__char-list-item"><span>Система хранения в основании</span>дверки</li>
+                  <li class="comparison__char-list-item"><span>Расположение петель</span>справа</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Готовые отверстия под
+                      смеситель в раковине</span>1</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Намеченные отверстия
+                      под смеситель в раковине</span>нет</li>
+                  <li class="comparison__char-list-item"><span>Диаметр слива раковины</span>4,5 см</li>
+                  <li class="comparison__char-list-item"><span>Для сифона диаметром</span>3,2 см</li>
+                  <li class="comparison__char-list-item"><span>Гарантия</span>2 года - раковина / 2 года - мебель</li>
+                  <li class="comparison__char-list-item"><span>Страна</span>Турция</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Вид основания под раковину</span>тумба под раковину</li>
+                  <li class="comparison__char-list-item"><span>Монтаж основания</span>подвесной</li>
+                  <li class="comparison__char-list-item"><span>Расположение смесителя</span>посередине</li>
+                  <li class="comparison__char-list-item"><span>Вид раковины</span>накладная (мебельная)</li>
+                  <li class="comparison__char-list-item"><span>Форма раковины</span>прямоугольная</li>
+                  <li class="comparison__char-list-item"><span>Система хранения в основании</span>дверки</li>
+                  <li class="comparison__char-list-item"><span>Расположение петель</span>справа</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Готовые отверстия под
+                      смеситель в раковине</span>1</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Намеченные отверстия
+                      под смеситель в раковине</span>нет</li>
+                  <li class="comparison__char-list-item"><span>Диаметр слива раковины</span>4,5 см</li>
+                  <li class="comparison__char-list-item"><span>Для сифона диаметром</span>3,2 см</li>
+                  <li class="comparison__char-list-item"><span>Гарантия</span>2 года - раковина / 2 года - мебель</li>
+                  <li class="comparison__char-list-item"><span>Страна</span>Турция</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Вид основания под раковину</span>тумба под раковину</li>
+                  <li class="comparison__char-list-item"><span>Монтаж основания</span>подвесной</li>
+                  <li class="comparison__char-list-item"><span>Расположение смесителя</span>посередине</li>
+                  <li class="comparison__char-list-item"><span>Вид раковины</span>накладная (мебельная)</li>
+                  <li class="comparison__char-list-item"><span>Форма раковины</span>прямоугольная</li>
+                  <li class="comparison__char-list-item"><span>Система хранения в основании</span>дверки</li>
+                  <li class="comparison__char-list-item"><span>Расположение петель</span>справа</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Готовые отверстия под
+                      смеситель в раковине</span>1</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Намеченные отверстия
+                      под смеситель в раковине</span>нет</li>
+                  <li class="comparison__char-list-item"><span>Диаметр слива раковины</span>4,5 см</li>
+                  <li class="comparison__char-list-item"><span>Для сифона диаметром</span>3,2 см</li>
+                  <li class="comparison__char-list-item"><span>Гарантия</span>2 года - раковина / 2 года - мебель</li>
+                  <li class="comparison__char-list-item"><span>Страна</span>Турция</li>
+                </ul>
+                <ul class="comparison__char-list comparison__slide-width">
+                  <li class="comparison__char-list-item"><span>Вид основания под раковину</span>тумба под раковину</li>
+                  <li class="comparison__char-list-item"><span>Монтаж основания</span>подвесной</li>
+                  <li class="comparison__char-list-item"><span>Расположение смесителя</span>посередине</li>
+                  <li class="comparison__char-list-item"><span>Вид раковины</span>накладная (мебельная)</li>
+                  <li class="comparison__char-list-item"><span>Форма раковины</span>прямоугольная</li>
+                  <li class="comparison__char-list-item"><span>Система хранения в основании</span>дверки</li>
+                  <li class="comparison__char-list-item"><span>Расположение петель</span>справа</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Готовые отверстия под
+                      смеситель в раковине</span>1</li>
+                  <li class="comparison__char-list-item comparison__char-list-item--2"><span>Намеченные отверстия
+                      под смеситель в раковине</span>нет</li>
+                  <li class="comparison__char-list-item"><span>Диаметр слива раковины</span>4,5 см</li>
+                  <li class="comparison__char-list-item"><span>Для сифона диаметром</span>3,2 см</li>
+                  <li class="comparison__char-list-item"><span>Гарантия</span>2 года - раковина / 2 года - мебель</li>
+                  <li class="comparison__char-list-item"><span>Страна</span>Турция</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comparison-bottom">
+      <div class="container">
+        <div class="comparison-bottom__inner">
+          <div class="comparison-bottom__btns comparison__char-slides">
+            <div class="comparison-bottom__btn-box comparison__slide-width">
+              <button class="comparison-bottom__btn btn-blue">В корзину +1</button>
+              <button class="comparison-bottom__btn btn-white">Удалить</button>
+            </div>
+            <div class="comparison-bottom__btn-box comparison__slide-width">
+              <button class="comparison-bottom__btn btn-blue">В корзину +1</button>
+              <button class="comparison-bottom__btn btn-white">Удалить</button>
+            </div>
+            <div class="comparison-bottom__btn-box comparison__slide-width">
+              <button class="comparison-bottom__btn btn-blue">В корзину +1</button>
+              <button class="comparison-bottom__btn btn-white">Удалить</button>
+            </div>
+            <div class="comparison-bottom__btn-box comparison__slide-width">
+              <button class="comparison-bottom__btn btn-blue">В корзину +1</button>
+              <button class="comparison-bottom__btn btn-white">Удалить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-none" style="display: none;">
+    </section>
+  </main>
+  <!--=include footer.html-->
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <div class="modal modal-filter" data-target="popup-filter">
+        <!--=include filter.html-->
+      </div>
+    </div>
+  </div>
+  <div class="modalsM">
+    <div class="modal-overlayM">
+      <div class="modalM modal-sorting" data-target="popup-sorting">
+        <ul class="dropdown__list">
+          <div class="dropdown__list-overlay"></div>
+          <div class="dropdown__list-mob dropdown__list-mob--title">
+            <span>Сортировка</span>
+            <svg class="icon-close popup-closeM">
+              <use xlink:href="#close"></use>
+            </svg>
+          </div>
+          <li class="dropdown__list-item" data-value="sorting-1">Сначала дорогие</li>
+          <li class="dropdown__list-item selected" data-value="sorting-2">Сначала дешевые</li>
+          <li class="dropdown__list-item" data-value="sorting-3">По брендам</li>
+          <li class="dropdown__list-item" data-value="sorting-4">По размеру скидки</li>
+          <button class="dropdown__list-mob dropdown__list-mob--reset" type="reset">
+            <span>Сбросить</span>
+          </button>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/noUiSlider/nouislider.min.js"></script>
+  <script src="libs/jquery/jquery.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/stocks.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/top.js"></script>
+  </body>
+
+</html>

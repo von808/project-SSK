@@ -23,6 +23,7 @@
 
 .down-compact {}
 
+
 .cover {
   min-height: 429px;
   position: relative;
@@ -452,7 +453,9 @@
     width: 100%;
   }
 
-  &__item-head {}
+  &__item-head {
+    cursor: pointer;
+  }
 
   &__item-head span {
     color: var(--content-primary, #272727);

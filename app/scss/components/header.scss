@@ -14,6 +14,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
+    position: relative;
 
     margin-right: auto;
 
@@ -105,7 +106,6 @@
   border-top: 1px solid var(--border-separator, rgba(0, 0, 0, 0.10));
   background: var(--Page-Color, #FCFDFF);
   position: relative;
-  margin-bottom: 4px;
   z-index: 50;
 
   &__inner {
@@ -169,7 +169,12 @@
   background: var(--Page-Color, #FCFDFF);
   height: 46px;
   margin-bottom: 70px;
+  margin-bottom: 24px;
   position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 27;
+  z-index: 32;
 
   &__inner {
     position: relative;
@@ -286,7 +291,7 @@
     width: 100%;
   }
 
-  .catalog {
+  .header-catalog {
     position: absolute;
     top: 87px;
     left: 50%;
@@ -387,7 +392,7 @@
       border-radius: 6px;
       overflow: hidden;
 
-      .catalog__category {
+      .header-catalog__category {
         width: 840px;
       }
     }
@@ -490,7 +495,7 @@ header {
     }
   }
 
-  .droplist-control.sctive {
+  .droplist-control.active {
     color: var(--main-variant, #0C33C0);
     background: var(--Interface-Color, #F8F7FA);
 

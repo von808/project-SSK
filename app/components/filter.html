@@ -1,0 +1,814 @@
+<form class="filter-menu">
+  <div class="filter-menu__head">
+    <h3 class="filter-menu__title">Фильтры</h3>
+    <svg class="icon-close popup-close mob">
+      <use xlink:href="#close"></use>
+    </svg>
+  </div>
+  <div class="catalog-products__filters-applied">
+    <button class="catalog-products__filters-applied-item">
+      Ш. от 64 см
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+    <button class="catalog-products__filters-applied-item">
+      Ш. до 78 см
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+    <button class="catalog-products__filters-applied-item">
+      от 5 000₽
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+    <button class="catalog-products__filters-applied-item">
+      до 16 000₽
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+    <button class="catalog-products__filters-applied-item">
+      Сталь
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+    <button class="catalog-products__filters-applied-item">
+      Нейлон
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+    <button class="catalog-products__filters-applied-item">
+      Белый
+      <svg class="icon-close">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="filter-menu__items">
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Габариты</h4>
+        <span class="filter-menu__item-head-marker filterActive">2</span>
+        <button class="filter-menu__item-head-clear filterActive" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content">
+          <div class="filter-menu__item-body-elem">
+            <div class="filter-menu__item-body-title">
+              Ширина
+              <span>(см)</span>
+            </div>
+            <div class="filter-menu__range filter-menu__range--width">
+              <div class="filter-menu__inputs">
+                <!-- disabled -->
+                <label class="filter-menu__label">
+                  <span class="filter-menu__label-text">от</span>
+                  <input class="filter-menu__input" id="range-width-1" type="number" min="0" max="400">
+                </label>
+                <!-- disabled -->
+                <label class="filter-menu__label">
+                  <span class="filter-menu__label-text">до</span>
+                  <input class="filter-menu__input" id="range-width-2" type="number" min="0" max="400">
+                </label>
+              </div>
+              <!-- disabled / disabled-from / disabled-to-->
+              <div class="filter-menu__range-item" id="range-width"></div>
+            </div>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <div class="filter-menu__item-body-title">
+              Высота
+              <span>(см)</span>
+            </div>
+            <div class="filter-menu__range filter-menu__range--height">
+              <div class="filter-menu__inputs">
+                <!-- disabled -->
+                <label class="filter-menu__label disabled">
+                  <span class="filter-menu__label-text">от</span>
+                  <input class="filter-menu__input" id="range-height-1" type="number" min="50" max="170">
+                </label>
+                <!-- disabled -->
+                <label class="filter-menu__label disabled">
+                  <span class="filter-menu__label-text">до</span>
+                  <input class="filter-menu__input" id="range-height-2" type="number" min="0" max="170">
+                </label>
+              </div>
+              <!-- disabled / disabled-from / disabled-to-->
+              <div class="filter-menu__range-item disabled" id="range-height"></div>
+            </div>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <div class="filter-menu__item-body-title">
+              Глубина
+              <span>(см)</span>
+            </div>
+            <div class="filter-menu__range filter-menu__range--depth">
+              <div class="filter-menu__inputs">
+                <!-- disabled -->
+                <label class="filter-menu__label">
+                  <span class="filter-menu__label-text">от</span>
+                  <input class="filter-menu__input" id="range-depth-1" type="number" min="0" max="400">
+                </label>
+                <!-- disabled -->
+                <label class="filter-menu__label">
+                  <span class="filter-menu__label-text">до</span>
+                  <input class="filter-menu__input" id="range-depth-2" type="number" min="0" max="400">
+                </label>
+              </div>
+              <!-- disabled / disabled-from / disabled-to-->
+              <div class="filter-menu__range-item" id="range-depth"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Цена</h4>
+        <span class="filter-menu__item-head-marker filterActive">1</span>
+        <button class="filter-menu__item-head-clear filterActive" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content">
+          <div class="filter-menu__item-body-elem">
+            <div class="filter-menu__range filter-menu__range--price">
+              <div class="filter-menu__inputs">
+                <!-- disabled -->
+                <label class="filter-menu__label">
+                  <span class="filter-menu__label-text">от</span>
+                  <input class="filter-menu__input" id="range-price-1" type="number" min="0" max="550000"
+                    placeholder="150000">
+                  <span class="filter-menu__label-text">₽</span>
+                </label>
+                <!-- disabled -->
+                <label class="filter-menu__label disabled">
+                  <span class="filter-menu__label-text">до</span>
+                  <input class="filter-menu__input" id="range-price-2" type="number" min="500" max="550000"
+                    placeholder="550000">
+                  <span class="filter-menu__label-text">₽</span>
+                </label>
+              </div>
+              <!-- disabled / disabled-from / disabled-to-->
+              <div class="filter-menu__range-item disabled-to" id="range-price"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Материал</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Сталь</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>ДСП</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>ЛДСП</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Картон</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Винил</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Стекло</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Воздух</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Сталь</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>ДСП</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>ЛДСП</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Картон</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Винил</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Стекло</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Воздух</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Цвет</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--steel"></span>
+              <span>Стальной</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--wood"></span>
+              <span>Грубое дерево</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--brown"></span>
+              <span>Пол в советском коридоре</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--lightgreen"></span>
+              <span>Плесень</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--lightblue"></span>
+              <span>Небесно-голубой</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--white"></span>
+              <span>Стекло</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--orange"></span>
+              <span>Апельсин</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--steel"></span>
+              <span>Стальной</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--wood"></span>
+              <span>Грубое дерево</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--brown"></span>
+              <span>Пол в советском коридоре</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--lightgreen"></span>
+              <span>Плесень</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--lightblue"></span>
+              <span>Небесно-голубой</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--white"></span>
+              <span>Стекло</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span class="filter-menu__checkbox-circle filter-menu__checkbox-circle--orange"></span>
+              <span>Апельсин</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Стиль</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Особенности</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Виды раковины</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Материал консоли</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Материал раковины</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-menu__item">
+      <div class="filter-menu__item-head">
+        <h4 class="filter-menu__item-head-title">Бренд</h4>
+        <span class="filter-menu__item-head-marker"></span>
+        <button class="filter-menu__item-head-clear" type="button"></button>
+        <svg class="chevron-right">
+          <use xlink:href="#chevron-right"></use>
+        </svg>
+      </div>
+      <div class="filter-menu__item-body">
+        <div class="filter-menu__item-body-content--checkboxes">
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+          <div class="filter-menu__item-body-elem">
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox">
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Checkbox</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- failed -->
+  <div class="filter-menu__btns filter-menu__btns--show ">
+    <button class="filter-menu__btn--show btn-blue" type="submit">
+      Показать
+      <span>(52)</span>
+    </button>
+    <button class="filter-menu__btn--reset btn-white" type="reset">
+      <span class="filter-menu__btn--1">Сбросить</span>
+      <span class="filter-menu__btn--2">Очистить</span>
+      <span class="filter-menu__btn--3">Отмена</span>
+    </button>
+  </div>
+</form>

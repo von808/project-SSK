@@ -44,7 +44,7 @@
 
   &__img {
     width: 944px;
-    height: auto;
+    height: 400px;
     object-fit: cover;
     border-radius: 14px;
   }
@@ -226,7 +226,8 @@
   margin: 0 -22px;
   padding: 0 22px;
 
-  .lineSwiper1 {
+  .lineSwiper1,
+  .lineSwiperStocks {
     overflow-x: visible;
     position: relative;
 
@@ -234,6 +235,7 @@
       position: absolute;
       content: '';
       height: 220px;
+      height: 100%;
       width: 24px;
       background-color: #fff;
       top: 0;
@@ -246,6 +248,7 @@
       position: absolute;
       content: '';
       height: 220px;
+      height: 100%;
       width: 24px;
       background-color: #fff;
       top: 0;
@@ -288,6 +291,22 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    color: var(--content-primary, #272727);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__date {
+    color: var(--content-tertiary, #A3A3A3);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
   }
 
   &__controls {
@@ -463,13 +482,21 @@
     text-align: left;
     margin-bottom: 8px;
     min-height: 72px;
+
+    &--2 {
+      -ms-line-clamp: 2;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      min-height: 48px;
+    }
   }
 
   &__bottom {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 0 10px;
   }
 
   &__item-price {
