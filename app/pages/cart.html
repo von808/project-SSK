@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <!--=include header.html-->
+  <!--=include header-compact.html-->
+
+  <!--=include burger.html-->
+  <main class="main">
+    <section class="page-title page-cart">
+      <div class="container">
+        <div class="page-title__inner">
+          <h1 class="page-title__title">Корзина</h1>
+          <span class="page-title__subtitle">4 товара</span>
+        </div>
+      </div>
+    </section>
+    <section class="page-topbar page-cart">
+      <div class="container">
+        <div class="page-topbar__inner">
+          <div class="page-topbar__left">
+            <a class="link" href="#!">Очистить <span>(4)</span></a>
+            <label class="checkbox-label">
+              <input class="input-hidden checkbox-input" type="checkbox" checked>
+              <div class="checkbox-box">
+                <svg class="checkbox-check">
+                  <use xlink:href="#checkbox-check"></use>
+                </svg>
+              </div>
+              <span>Выбрать все</span>
+            </label>
+          </div>
+          <div class="page-topbar__right">
+            <a class="link" href="#!">
+              Поделиться корзиной
+              <svg class="icon-share">
+                <use xlink:href="#share"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cart">
+      <div class="container">
+        <div class="cart__inner">
+          <div class="cart__content">
+            <div class="cart__list">
+              <div class="cart__item">
+                <div class="cart__item-img--box">
+                  <img class="cart__item-img" src="images/img-pointer-1.png" alt="">
+                </div>
+                <label class="checkbox-label cart__item-checkbox">
+                  <input class="input-hidden checkbox-input" type="checkbox" checked>
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <span>Зеркало</span>
+                </label>
+                <!-- для отключения promocode добавить в блок promocode класс disabled -->
+                <div class="promocode cart__item-promocode">
+                  <div class="promocode__promo">
+                    <span class="promocode__precent">- 30%</span>
+                    <div class="promocode__code-box">
+                      <span class="promocode__code-subtitle">По промокоду</span>
+                      <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                    </div>
+                  </div>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox">
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Вкл</span>
+                  </label>
+                </div>
+                <div class="cart__item-name">
+                  <span class="line-swiper1__title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                </div>
+                <div class="price-box__price-box cart__item-price">
+                  <div class="price-box__sale-box">
+                    <span class="img-pointer__card-info-sale">-50%</span>
+                    <span class="img-pointer__card-info-old-price">12 780 ₽/шт</span>
+                  </div>
+                  <h2 class="price-box__title">
+                    <span>11 340</span> ₽/шт
+                  </h2>
+                  <button class="link cart__item-delete desk-lptp-b">Удалить</button>
+                </div>
+                <button class="link cart__item-delete lptp-s">Удалить</button>
+                <label class="checkbox-label assembly-mob lptp-s">
+                  <input class="input-hidden checkbox-input" type="checkbox">
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <svg class="icon-tool">
+                    <use xlink:href="#tool"></use>
+                  </svg>
+                  <span>Монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                </label>
+                <div class="cart__item-bottom">
+                  <label class="checkbox-label desk">
+                    <input class="input-hidden checkbox-input" type="checkbox">
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <svg class="icon-tool">
+                      <use xlink:href="#tool"></use>
+                    </svg>
+                    <span>Требуется монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                  </label>
+                  <div class="see-more__pagination-pages">
+                    <span>3</span>
+                  </div>
+                  <div class="btns cart__item-btns">
+                    <button class="btn-white">
+                      <svg class="icon-minus">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <button class="btn-white">
+                      <svg class="icon-plus">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__item">
+                <div class="cart__item-img--box">
+                  <img class="cart__item-img" src="images/complect-1.png" alt="">
+                </div>
+                <label class="checkbox-label cart__item-checkbox">
+                  <input class="input-hidden checkbox-input" type="checkbox" checked>
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <span>Комплект</span>
+                </label>
+                <!-- для отключения promocode добавить в блок promocode класс disabled -->
+                <div class="promocode cart__item-promocode">
+                  <div class="promocode__promo">
+                    <span class="promocode__precent">- 31%</span>
+                    <div class="promocode__code-box">
+                      <span class="promocode__code-subtitle">По промокоду</span>
+                      <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                    </div>
+                  </div>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Вкл</span>
+                  </label>
+                </div>
+                <div class="cart__item-name">
+                  <div class="cart__item-name--pointer">
+                    <span class="line-swiper1__title">Зеркало круглое Belinza Calvin 80 ледяная синева</span>
+                    <div class="cart__item-name-price">
+                      <span class="line-swiper1__item-price"><span>30 000</span> ₽/шт</span>
+                      <span class="product-list-infobox__price-sale">-13 478₽</span>
+                      <span class="img-pointer__card-info-old-price">43 478 ₽/шт</span>
+                    </div>
+                  </div>
+                  <div class="cart__item-name--pointer">
+                    <span class="line-swiper1__title">Тумба с раковиной Belinza Calvin 82 ледяная синева</span>
+                    <div class="cart__item-name-price">
+                      <span class="line-swiper1__item-price"><span>75 680</span> ₽/шт</span>
+                      <span class="product-list-infobox__price-sale">-33 696₽</span>
+                      <span class="img-pointer__card-info-old-price">108 696 ₽/шт</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-box__price-box cart__item-price">
+                  <div class="price-box__sale-box">
+                    <span class="img-pointer__card-info-sale">-31%</span>
+                    <span class="img-pointer__card-info-old-price">152 174 ₽/шт</span>
+                  </div>
+                  <h2 class="price-box__title">
+                    <span>105 000</span> ₽/шт
+                  </h2>
+                  <button class="link cart__item-delete desk-lptp-b">Удалить</button>
+                </div>
+                <button class="link cart__item-delete lptp-s">Удалить</button>
+                <label class="checkbox-label assembly-mob lptp-s">
+                  <input class="input-hidden checkbox-input" type="checkbox">
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <svg class="icon-tool">
+                    <use xlink:href="#tool"></use>
+                  </svg>
+                  <span>Монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                </label>
+                <div class="cart__item-bottom">
+                  <label class="checkbox-label desk">
+                    <input class="input-hidden checkbox-input" type="checkbox">
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <svg class="icon-tool">
+                      <use xlink:href="#tool"></use>
+                    </svg>
+                    <span>Требуется монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                  </label>
+                  <div class="see-more__pagination-pages">
+                    <span>1</span>
+                  </div>
+                  <div class="btns cart__item-btns">
+                    <button class="btn-white">
+                      <svg class="icon-minus">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <button class="btn-white">
+                      <svg class="icon-plus">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__item disabled">
+                <div class="cart__item-img--box">
+                  <img class="cart__item-img" src="images/img-pointer-1.png" alt="">
+                </div>
+                <label class="checkbox-label cart__item-checkbox">
+                  <input class="input-hidden checkbox-input" type="checkbox">
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <span>Зеркало</span>
+                </label>
+                <!-- для отключения promocode добавить в блок promocode класс disabled -->
+                <div class="promocode cart__item-promocode" style="display: none;">
+                  <div class="promocode__promo">
+                    <span class="promocode__precent">- 30%</span>
+                    <div class="promocode__code-box">
+                      <span class="promocode__code-subtitle">По промокоду</span>
+                      <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                    </div>
+                  </div>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox">
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Вкл</span>
+                  </label>
+                </div>
+                <div class="cart__item-name">
+                  <span class="line-swiper1__title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                </div>
+                <div class="price-box__price-box cart__item-price">
+                  <div class="price-box__sale-box">
+                    <span class="img-pointer__card-info-sale">-50%</span>
+                    <span class="img-pointer__card-info-old-price">12 780 ₽/шт</span>
+                  </div>
+                  <h2 class="price-box__title">
+                    <span>11 340</span> ₽/шт
+                  </h2>
+                  <button class="link cart__item-delete desk-lptp-b">Удалить</button>
+                </div>
+                <button class="link cart__item-delete lptp-s">Удалить</button>
+                <label class="checkbox-label assembly-mob lptp-s">
+                  <input class="input-hidden checkbox-input" type="checkbox">
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <svg class="icon-tool">
+                    <use xlink:href="#tool"></use>
+                  </svg>
+                  <span>Монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                </label>
+                <div class="cart__item-bottom">
+                  <label class="checkbox-label desk">
+                    <input class="input-hidden checkbox-input" type="checkbox">
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <svg class="icon-tool">
+                      <use xlink:href="#tool"></use>
+                    </svg>
+                    <span>Требуется монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                  </label>
+                  <div class="see-more__pagination-pages">
+                    <span>1</span>
+                  </div>
+                  <div class="btns cart__item-btns">
+                    <button class="btn-white">
+                      <svg class="icon-minus">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <button class="btn-white">
+                      <svg class="icon-plus">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__item">
+                <div class="cart__item-img--box">
+                  <img class="cart__item-img" src="images/img-pointer-1.png" alt="">
+                </div>
+                <label class="checkbox-label cart__item-checkbox">
+                  <input class="input-hidden checkbox-input" type="checkbox" checked>
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <span>Зеркало</span>
+                </label>
+                <!-- для отключения promocode добавить в блок promocode класс disabled -->
+                <div class="promocode cart__item-promocode" style="display: none;">
+                  <div class="promocode__promo">
+                    <span class="promocode__precent">- 30%</span>
+                    <div class="promocode__code-box">
+                      <span class="promocode__code-subtitle">По промокоду</span>
+                      <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                    </div>
+                  </div>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox">
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Вкл</span>
+                  </label>
+                </div>
+                <div class="cart__item-name">
+                  <span class="line-swiper1__title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                    1A214402Bac20</span>
+                  <div class="cart__item-name--pointer cart__item-name--pointer-bg">
+                    <span class="line-swiper1__title">Установка</span>
+                    <div class="cart__item-name-price">
+                      <span class="line-swiper1__item-price">В подарок</span>
+                      <span class="product-list-infobox__price-sale">-100%</span>
+                      <span class="img-pointer__card-info-old-price">2 000 ₽/шт</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-box__price-box cart__item-price">
+                  <div class="price-box__sale-box" style="display: none;">
+                    <span class="img-pointer__card-info-sale">-50%</span>
+                    <span class="img-pointer__card-info-old-price">12 780 ₽/шт</span>
+                  </div>
+                  <h2 class="price-box__title">
+                    <span>101 340</span> ₽/шт
+                  </h2>
+                  <button class="link cart__item-delete desk-lptp-b">Удалить</button>
+                </div>
+                <button class="link cart__item-delete lptp-s">Удалить</button>
+                <label class="checkbox-label assembly-mob lptp-s">
+                  <input class="input-hidden checkbox-input" type="checkbox" checked>
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <svg class="icon-tool">
+                    <use xlink:href="#tool"></use>
+                  </svg>
+                  <span>Монтаж <span class="subtitle--gray">+2 000₽</span></span>
+                </label>
+                <div class="cart__item-bottom">
+                  <label class="checkbox-label desk">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <svg class="icon-tool">
+                      <use xlink:href="#tool"></use>
+                    </svg>
+                    <span>Требуется монтаж <span class="subtitle--gray">+0₽</span></span>
+                  </label>
+                  <div class="see-more__pagination-pages">
+                    <span>1</span>
+                  </div>
+                  <div class="btns cart__item-btns">
+                    <button class="btn-white">
+                      <svg class="icon-minus">
+                        <use xlink:href="#minus"></use>
+                      </svg>
+                    </button>
+                    <button class="btn-white">
+                      <svg class="icon-plus">
+                        <use xlink:href="#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__sidebar">
+              <div class="cart__sidebar-order">
+                <div class="price-box__price">
+                  <div class="price-box__price-box">
+                    <div class="price-box__sale-box">
+                      <span class="img-pointer__card-info-sale">-5 668 ₽</span>
+                      <span class="img-pointer__card-info-old-price">17 008 ₽/шт</span>
+                    </div>
+                    <h2 class="price-box__title">
+                      <span>11 340</span> ₽/шт
+                    </h2>
+                  </div>
+                  <div class="price-box__loyality-box">
+                    <div class="price-box__loyality price-box__loyality--login">
+                      <span>+ 12 768 баллов</span>
+                      <label class="checkbox-label">
+                        <input class="input-hidden checkbox-input" type="checkbox" checked>
+                        <div class="checkbox-box">
+                          <svg class="checkbox-check">
+                            <use xlink:href="#checkbox-check"></use>
+                          </svg>
+                        </div>
+                        <span>Баллы <span class="subtitle--gray">(- 350₽)</span></span>
+                      </label>
+                    </div>
+                    <div class="price-box__loyality price-box__loyality--nologin" style="display: none;">
+                      <span>+ 99 999 баллов</span>
+                      <div class="price-box__loyality-links price-box__loyality-links--desk">
+                        <a class="price-box__loyality-link" href="#!">Регистрация</a>
+                        <a class="price-box__loyality-link" href="#!">Войти</a>
+                      </div>
+                      <a class="price-box__loyality-link price-box__loyality-links--mob" href="#!">Войти в
+                        аккаунт</a>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn-blue w100p" href="#!">Оформить</a>
+                <div class="price-box__sale-list">
+                  <dl class="price-box__sale">
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Товар<span class="price-box__sale-term--why">(3 шт)</span></span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--black">+ 152 174 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Монтаж<span class="price-box__sale-term--why">(3 шт)</span></span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--black">+ 0 ₽</dd>
+                    </div>
+                  </dl>
+                  <span class="line"></span>
+                  <dl class="price-box__sale">
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Баллы</span>
+                      </dt>
+                      <dd class="price-box__sale-val">- 350 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Промокод</span>
+                      </dt>
+                      <dd class="price-box__sale-val">- 1 650 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Акция</span>
+                      </dt>
+                      <dd class="price-box__sale-val">- 22 494 ₽</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="promocode-box">
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input form__input--btn" type="text" placeholder="">
+                    <label class="form__label">Промокод</label>
+                    <button class="form__input-btn" type="submit">
+                      <svg class="icon-check">
+                        <use xlink:href="#check"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="promocode__apply">
+                    <div class="promocode__apply-item">
+                      <span class="promocode__apply-text">ВВС30ЛОШАДЬ</span>
+                      <button class="promocode__apply-btn">
+                        <svg class="icon-close">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="promocode__apply-item">
+                      <span class="promocode__apply-text">30ЛЕТКОТУ</span>
+                      <button class="promocode__apply-btn">
+                        <svg class="icon-close">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__assembly">
+                <div class="cart__assembly-head">
+                  <h3 class="h-normal">Установка</h3>
+                </div>
+                <div class="cart__assembly-list">
+                  <div class="product-mini-card sale--price">
+                    <div class="img-pointer__card-img-box">
+                      <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                    </div>
+                    <div class="img-pointer__card-info img-pointer__card-info--sale">
+                      <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                        1A214402Bac20</span>
+                      <span class="img-pointer__card-info-price">Монтаж в подарок</span>
+                      <span class="img-pointer__card-info-sale">-99%</span>
+                      <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                    </div>
+                    <button class="product-mini-card__cancel link">Отменить монтаж</button>
+                  </div>
+                  <div class="product-mini-card sale--price">
+                    <div class="img-pointer__card-img-box">
+                      <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                    </div>
+                    <div class="img-pointer__card-info img-pointer__card-info--sale">
+                      <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                        1A214402Bac20</span>
+                      <span class="img-pointer__card-info-price">2 000 ₽/услугу</span>
+                      <span class="img-pointer__card-info-sale">-99%</span>
+                      <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                    </div>
+                    <button class="product-mini-card__cancel link">Отменить монтаж</button>
+                  </div>
+                  <div class="product-mini-card sale--price">
+                    <div class="img-pointer__card-img-box">
+                      <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                    </div>
+                    <div class="img-pointer__card-info img-pointer__card-info--sale">
+                      <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                        1A214402Bac20</span>
+                      <span class="img-pointer__card-info-price">2 000 ₽/услугу</span>
+                      <span class="img-pointer__card-info-sale">-99%</span>
+                      <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                    </div>
+                    <button class="product-mini-card__cancel link">Отменить монтаж</button>
+                  </div>
+                </div>
+                <div class="cart__assembly-descr">
+                  <p>
+                    Монтажные работы в городе Сантк-Петербург поизводятся компанией ООО «Битек». (ИНН 5003114492)
+                  </p>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Я согласен на передачу моих персональных данных ООО «Битек». <span
+                        class="required-red">*</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular page-cart">
+      <div class="container">
+        <div class="popular__inner">
+          <h2 class="title popular__title">Может понравится</h2>
+          <div class="line-swiper1">
+            <div class="swiper lineSwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <div class="sale-boxes">
+                        <div class="gift-box">
+                          <svg class="gift">
+                            <use xlink:href="#gift"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                      1A214402Bac20</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>6 680</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-5.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Смеситель для раковины настенный скрытого монтажа излив
+                      19см
+                      (скрытая часть в комплекте) Remer X15PLVO</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>39 430</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-5.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-6.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Смеситель для кухни Roca L90 5A8501C00</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>23 270</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <div class="sale-boxes">
+                        <div class="gift-box">
+                          <svg class="gift">
+                            <use xlink:href="#gift"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-4.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-5.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-6.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-7.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Тумба под раковину Jacob Delafon Vivienne 100 см, корпус
+                      Дуб,
+                      фасад Дуб, без ручек, EB1585-E70-E70</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>46 270</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-5.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-6.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-7.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Тумба под раковину 60 см Jacob Delafon Madeleine
+                      EB2052-J5</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>38 000</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <div class="sale-boxes">
+                        <div class="gift-box">
+                          <svg class="gift">
+                            <use xlink:href="#gift"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-6.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-7.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Ванна стальная Roca Swing Plus 180x80 см, с ручками
+                      236655000</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>8 470</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item">
+                    <div class="line-swiper1__img-box">
+                      <a href="#!" class="product__image">
+                        <div class="product__switch image-switch">
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-7.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-1.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-2.png" alt="popular-img"></div>
+                          </div>
+                          <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="images/popular-3.png" alt="popular-img"></div>
+                          </div>
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                      </a>
+                    </div>
+                    <a class="line-swiper1__title" href="#!">Ванна стальная Roca Swing Plus 180x80 см, с ручками
+                      236655000</a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span>6 680</span> ₽/шт</span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item empty">
+                    <div class="line-swiper1__img-box">
+    
+                    </div>
+                    <a class="line-swiper1__title" href="#!">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span></span></span>
+                      <a class="line-swiper1__item-favorite" href="#!">
+                        <svg class="favorite">
+                          <use xlink:href="#favorite"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="line-swiper1__item empty">
+                    <div class="line-swiper1__img-box">
+    
+                    </div>
+                    <a class="line-swiper1__title" href="#!">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                    <div class="line-swiper1__bottom">
+                      <span class="line-swiper1__item-price"><span></span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+              <div class="line-swiper1__controls">
+                <div class="swiper-button-next">
+                  <span class="swiper-controls-overlay-single"></span>
+                  <svg class="chevron-right">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev">
+                  <span class="swiper-controls-overlay-single"></span>
+                  <svg class="chevron-right">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-none" style="display: none;">
+    </section>
+  </main>
+  <!--=include footer.html-->
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+
+    </div>
+  </div>
+  <div class="modalsM">
+    <div class="modal-overlayM">
+
+    </div>
+  </div>
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/noUiSlider/nouislider.min.js"></script>
+  <script src="libs/jquery/jquery.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+
+</html>

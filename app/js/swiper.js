@@ -177,6 +177,29 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+  var swiper = new Swiper(".slider-reviews-stars", {
+    a11y: false,
+    slidesPerView: 2,
+    spaceBetween: 16,
+    freeMode: true,
+    breakpoints: {
+      360: {
+        slidesPerView: 2.15,
+      },
+      460: {
+        slidesPerView: 2.8,
+      },
+      540: {
+        slidesPerView: 3.4,
+      },
+      630: {
+        slidesPerView: 4.2,
+      },
+      768: {
+        slidesPerView: 5,
+      },
+    },
+  });
 
   $(function initSlider() {
 
@@ -243,4 +266,80 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   })
+
+  // PRODUCT-CARD-SWIPER
+
+  const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
+    let swiper;
+
+    breakpoint = window.matchMedia(breakpoint);
+
+    const enableSwiper = function (className, settings) {
+      swiper = new Swiper(className, settings);
+
+      if (callback) {
+        callback(swiper);
+      }
+    }
+
+    const checker = function () {
+      if (breakpoint.matches) {
+        return enableSwiper(swiperClass, swiperSettings);
+      } else {
+        if (swiper !== undefined) swiper.destroy(true, true);
+        return;
+      }
+    };
+
+    breakpoint.addEventListener('change', checker);
+    checker();
+  }
+
+  const someFunc = (instance) => {
+    if (instance) {
+      instance.on('slideChange', function (e) {
+        console.log('*** mySwiper.activeIndex', instance.activeIndex);
+      });
+    }
+  };
+
+  resizableSwiper(
+    '(max-width: 991px)',
+    '.slider-product-card',
+    {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      a11y: false,
+      loop: false,
+      pagination: false,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    },
+    someFunc
+  );
+
+  resizableSwiper(
+    '(max-width: 991px)',
+    '.slider-reviews-images',
+    {
+      slidesPerView: 2.4,
+      spaceBetween: 16,
+      a11y: false,
+      loop: false,
+      pagination: false,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      breakpoints: {
+        540: {
+          slidesPerView: 4.5,
+        },
+        768: {
+          slidesPerView: 6.5,
+        },
+      },
+    },
+    someFunc
+  );
 });

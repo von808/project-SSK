@@ -44,6 +44,8 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
+
+    position: relative;
   }
 
   &__text {
@@ -72,6 +74,12 @@
     width: 200px;
     height: 70px;
     object-fit: cover;
+  }
+
+  &-more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 

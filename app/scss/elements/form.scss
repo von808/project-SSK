@@ -44,6 +44,20 @@
       stroke: rgba(0, 0, 0, 0.32);
       display: none;
     }
+
+    .form__input-btn {
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+
+    .form__input--btn {
+      padding-right: 60px;
+      text-transform: uppercase;
+    }
   }
 
   &__input {
@@ -57,6 +71,12 @@
 
     position: relative;
     z-index: 1;
+
+    color: var(--content-primary, #272727);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
   }
 
   &__input:hover {
@@ -75,6 +95,14 @@
     border: 1px solid var(--main-variant, #0C33C0);
     background: var(--White, #FFF);
     padding: 16px 16px 4px;
+  }
+
+  &__input--promocode:focus,
+  &__input--promocode:focus-visible,
+  &__input--promocode:not(:placeholder-shown) {
+    border: 1px solid var(--main-variant, #0C33C0);
+    background: var(--White, #FFF);
+    padding: 16px 44px 4px 16px;
   }
 
   &__input:focus+.form__label,
@@ -112,6 +140,23 @@
     stroke: #272727 !important;
     z-index: 5;
     transform: rotate(0) !important;
+  }
+
+  &__input-text {
+    margin-top: 6px;
+    display: inline-block;
+
+    color: var(--content-secondary, #69718E);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__input--textarea {
+    width: 100%;
+    min-height: 92px;
+    resize: none;
   }
 }
 
@@ -296,7 +341,7 @@
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background-image: url(../../images/check.svg);
+    background-image: url(../images/check.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center left;

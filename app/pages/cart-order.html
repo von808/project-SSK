@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <!--=include header.html-->
+  <!--=include header-compact.html-->
+
+  <!--=include burger.html-->
+  <main class="main">
+    <section class="crumbs">
+      <div class="container">
+        <div class="crumbs__inner">
+          <a class="link" href="#!">
+            <svg class="icon-arrow">
+              <use xlink:href="#arrow"></use>
+            </svg>
+            Корзина
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="page-title page-cart-order">
+      <div class="container">
+        <div class="page-title__inner">
+          <h1 class="page-title__title">Оформление заказа</h1>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
+        <div class="order__inner">
+          <form class="order__content">
+            <div class="order__col order__left">
+              <div class="order__box-tr">
+                <label class="radio-label">
+                  <input class="input-hidden radio-input" type="radio" name="person" checked>
+                  <div class="radio-box">
+                    <svg class="radio-check">
+                      <use xlink:href="#radio-check"></use>
+                    </svg>
+                  </div>
+                  <span>Физическое лицо</span>
+                </label>
+                <label class="radio-label">
+                  <input class="input-hidden radio-input" type="radio" name="person">
+                  <div class="radio-box">
+                    <svg class="radio-check">
+                      <use xlink:href="#radio-check"></use>
+                    </svg>
+                  </div>
+                  <span>Юридическое лицо</span>
+                </label>
+              </div>
+              <div class="order__box">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Контакты</h3>
+                </div>
+                <div class="order__box-body">
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="number" placeholder="" required>
+                    <label class="form__label">Телефон <span class="required-red">*</span></label>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="text" placeholder="" required>
+                    <label class="form__label">Имя Отчество <span class="required-red">*</span></label>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="email" placeholder="">
+                    <label class="form__label">Почта</label>
+                    <span class="form__input-text">Мы направим туда чек. <span class="subtitle--gray">Но можно
+                        пропустить.</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="order__box">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Город</h3>
+                  <button class="link">Изменить</button>
+                </div>
+                <div class="order__box-body">
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="email" placeholder="" value="">
+                    <label class="form__label">Почта</label>
+                    <span class="form__input-text">При смене города будьте внимательны, итоговая стоимость тоже может
+                      измениться.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="order__box method">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Способ получения</h3>
+                </div>
+                <div class="order__box-body">
+                  <label class="radio-label">
+                    <input class="input-hidden radio-input" type="radio" name="method" checked>
+                    <div class="radio-box">
+                      <svg class="radio-check">
+                        <use xlink:href="#radio-check"></use>
+                      </svg>
+                    </div>
+                    <div class="box">
+                      <div class="box-1">
+                        <span>Доставка</span>
+                      </div>
+                      <div class="box-2">
+                        <span>с 16 июля, Вс</span>
+                        <span>от 1 200 ₽</span>
+                      </div>
+                    </div>
+                  </label>
+                  <span class="line"></span>
+                  <label class="radio-label">
+                    <input class="input-hidden radio-input" type="radio" name="method">
+                    <div class="radio-box">
+                      <svg class="radio-check">
+                        <use xlink:href="#radio-check"></use>
+                      </svg>
+                    </div>
+                    <div class="box">
+                      <div class="box-1">
+                        <span>Самовывоз</span>
+                      </div>
+                      <div class="box-2">
+                        <span>с 16 июля, Вс</span>
+                        <span>Бесплатно</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="order__box">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Адрес</h3>
+                  <button class="link">Указать на карте</button>
+                </div>
+                <div class="order__box-body">
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="text" placeholder="" required>
+                    <label class="form__label">Улица <span class="required-red">*</span></label>
+                  </div>
+                  <div class="order__box-inputs">
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input" type="text" placeholder="" required>
+                      <label class="form__label">Дом/Корпус <span class="required-red">*</span></label>
+                    </div>
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input" type="text" placeholder="" required>
+                      <label class="form__label">Квартира</label>
+                    </div>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <textarea class="form__input form__input--textarea" type="email" placeholder=""></textarea>
+                    <label class="form__label">Комментарий</label>
+                  </div>
+                </div>
+              </div>
+              <div class="order__box">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Адрес</h3>
+                </div>
+                <div class="order__box-body">
+                  <a class="order__address-box" href="#!">
+                    <div class="order__address-img-box">
+                      <img class="order__address-img" src="images/address-map.png" alt="map">
+                    </div>
+                    <div class="order__address-pick">
+                      <button class="order__address-btn btn-blue" type="button">Выбрать</button>
+                      <div class="order__address-info">
+                        <span>5 пунктов самовывоза</span>
+                        <span>с 16 июля, Вс</span>
+                      </div>
+                    </div>
+                  </a>
+                  <span class="line"></span>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Заказ будет получать другой человек</span>
+                  </label>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="text" placeholder="" required>
+                    <label class="form__label">Телефон получателя <span class="required-red">*</span></label>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="text" placeholder="" required>
+                    <label class="form__label">Имя и Отчество получателя <span class="required-red">*</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="order__box">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Доставка</h3>
+                </div>
+                <div class="order__box-body">
+                  <div class="order__delivery-box">
+                    <label class="radio-label">
+                      <input class="input-hidden radio-input" type="radio" name="delivery" checked>
+                      <div class="radio-box">
+                        <svg class="radio-check">
+                          <use xlink:href="#radio-check"></use>
+                        </svg>
+                      </div>
+                      <svg>
+                        <use xlink:href="#package"></use>
+                      </svg>
+                      <span>Собственный курьер</span>
+                    </label>
+                    <label class="radio-label">
+                      <input class="input-hidden radio-input" type="radio" name="delivery">
+                      <div class="radio-box">
+                        <svg class="radio-check">
+                          <use xlink:href="#radio-check"></use>
+                        </svg>
+                      </div>
+                      <svg class="icon-delivery">
+                        <use xlink:href="#cdek"></use>
+                      </svg>
+                      <span class="order__delivery-text">CDEK</span>
+                    </label>
+                    <label class="radio-label">
+                      <input class="input-hidden radio-input" type="radio" name="delivery">
+                      <div class="radio-box">
+                        <svg class="radio-check">
+                          <use xlink:href="#radio-check"></use>
+                        </svg>
+                      </div>
+                      <svg class="icon-delivery">
+                        <use xlink:href="#pek"></use>
+                      </svg>
+                      <span class="order__delivery-text">ПЭК</span>
+                    </label>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input form__input--btn" type="text" placeholder="">
+                    <label class="form__label">Дата</label>
+                    <button class="form__input-btn" type="submit">
+                      <svg class="icon-angle-d">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input form__input--btn" type="text" placeholder="">
+                    <label class="form__label">Время</label>
+                    <button class="form__input-btn" type="submit">
+                      <svg class="icon-angle-d">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="line"></span>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Потребуется подъем на этаж</span>
+                  </label>
+                  <div class="order__box-inputs">
+                    <label class="checkbox-label">
+                      <input class="input-hidden checkbox-input" type="checkbox">
+                      <div class="checkbox-box">
+                        <svg class="checkbox-check">
+                          <use xlink:href="#checkbox-check"></use>
+                        </svg>
+                      </div>
+                      <span>Нет лифта</span>
+                    </label>
+                    <div class="see-more__pagination-pages">
+                      <span>1</span>этаж<span></span>
+                    </div>
+                  </div>
+                  <span class="line"></span>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>Заказ будет получать другой человек</span>
+                  </label>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="text" placeholder="" required>
+                    <label class="form__label">Телефон получателя <span class="required-red">*</span></label>
+                  </div>
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <input class="form__input" type="text" placeholder="" required>
+                    <label class="form__label">Имя и Отчество получателя <span class="required-red">*</span></label>
+                  </div>
+                </div>
+                <div class="order__box-under">
+                  <div class="order__under-item">
+                    <span class="i-normal">Стоимость доставки</span>
+                    <span class="h-small">1 950 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="order__box method-pay">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Способ оплаты</h3>
+                </div>
+                <div class="order__box-body">
+                  <label class="radio-label">
+                    <input class="input-hidden radio-input" type="radio" name="method-pay" checked>
+                    <div class="radio-box">
+                      <svg class="radio-check">
+                        <use xlink:href="#radio-check"></use>
+                      </svg>
+                    </div>
+                    <div class="box">
+                      <div class="box-1">
+                        <span>При получении</span>
+                      </div>
+                      <div class="box-2">
+                        <span>Наличными или картой</span>
+                      </div>
+                    </div>
+                  </label>
+                  <span class="line"></span>
+                  <label class="radio-label">
+                    <input class="input-hidden radio-input" type="radio" name="method-pay">
+                    <div class="radio-box">
+                      <svg class="radio-check">
+                        <use xlink:href="#radio-check"></use>
+                      </svg>
+                    </div>
+                    <div class="box">
+                      <div class="box-1">
+                        <span>Онлайн</span>
+                      </div>
+                      <div class="box-2">
+                        <span>Visa, MC, Мир, SberPay и СБП</span>
+                      </div>
+                    </div>
+                  </label>
+                  <span class="line"></span>
+                  <label class="radio-label">
+                    <input class="input-hidden radio-input" type="radio" name="method-pay">
+                    <div class="radio-box">
+                      <svg class="radio-check">
+                        <use xlink:href="#radio-check"></use>
+                      </svg>
+                    </div>
+                    <div class="box">
+                      <div class="box-1">
+                        <img class="dolyame-img" src="images/dolyame.svg" alt="dolyame">
+                      </div>
+                      <div class="box-2">
+                        <span>4 платежа по 31 920 ₽</span>
+                      </div>
+                      <div class="box-3">
+                        <div class="box-3__item">
+                          <span>Сегодня</span>
+                          <span>31 920 ₽</span>
+                          <span></span>
+                        </div>
+                        <div class="box-3__item">
+                          <span>24 дек</span>
+                          <span>31 920 ₽</span>
+                          <span></span>
+                        </div>
+                        <div class="box-3__item">
+                          <span>7 янв</span>
+                          <span>31 920 ₽</span>
+                          <span></span>
+                        </div>
+                        <div class="box-3__item">
+                          <span>21 янв</span>
+                          <span>31 920 ₽</span>
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="order__box">
+                <div class="order__box-head">
+                  <h3 class="h-normal">Дополнительно</h3>
+                </div>
+                <div class="order__box-body">
+                  <div class="form__input-box">
+                    <span class="input-overlay-disabled"></span>
+                    <textarea class="form__input form__input--textarea" type="email" placeholder=""></textarea>
+                    <label class="form__label">Комментарий к заказу</label>
+                  </div>
+                  <span class="line"></span>
+                  <label class="checkbox-label">
+                    <input class="input-hidden checkbox-input" type="checkbox" checked>
+                    <div class="checkbox-box">
+                      <svg class="checkbox-check">
+                        <use xlink:href="#checkbox-check"></use>
+                      </svg>
+                    </div>
+                    <span>У меня остались вопросы</span>
+                  </label>
+                  <p class="order__box-text">
+                    Мы свяжемся с вами в течении 15 минут после оформления. Если у вас оплата онлайн, позвоните нам
+                    самостоятельно
+                    до оплаты: <a class="order__box-phone" href="tel:+78003998585">+7 800 399 85 85</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="order__col order__right">
+              <div class="cart__sidebar-order page-order">
+                <div class="price-box__sale-list">
+                  <dl class="price-box__sale">
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Товар<span class="price-box__sale-term--why">(3 шт)</span></span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--black">+ 152 174 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Монтаж<span class="price-box__sale-term--why">(3 шт)</span></span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--black">+ 0 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Доставка</span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--black">+ 1 950 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Подъем на 1 этаж</span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--black">+ 600 ₽</dd>
+                    </div>
+                  </dl>
+                  <span class="line"></span>
+                  <dl class="price-box__sale">
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Баллы</span>
+                      </dt>
+                      <dd class="price-box__sale-val">- 350 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Промокод</span>
+                      </dt>
+                      <dd class="price-box__sale-val">- 1 650 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Акция</span>
+                      </dt>
+                      <dd class="price-box__sale-val">- 22 494 ₽</dd>
+                    </div>
+                  </dl>
+                  <span class="line"></span>
+                  <dl class="price-box__sale">
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Итого</span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--big">127 680 ₽</dd>
+                    </div>
+                    <div class="price-box__sale-item">
+                      <dt class="price-box__sale-term">
+                        <span>Будет начислено</span>
+                      </dt>
+                      <dd class="price-box__sale-val price-box__sale-val--gray">12 768 баллов</dd>
+                    </div>
+                  </dl>
+                </div>
+                <button class="btn-blue w100p" type="button">Оформить заказ</button>
+                <label class="checkbox-label">
+                  <input class="input-hidden checkbox-input" type="checkbox" checked>
+                  <div class="checkbox-box">
+                    <svg class="checkbox-check">
+                      <use xlink:href="#checkbox-check"></use>
+                    </svg>
+                  </div>
+                  <span>Даю свое согласие на <a class="link" href="#!">обработку персональных данных</a> и соглашаюсь
+                    с <a class="link" href="#!">политикой конфиденциальности</a>
+                </label>
+              </div>
+              <div class="cart__assembly">
+                <div class="cart__assembly-head">
+                  <h3 class="h-normal">Установка</h3>
+                </div>
+                <div class="cart__assembly-descr">
+                  <p>
+                    За день до доставки с вами свяжется компания-подрядчик для уточнения деталей по установке.
+                  </p>
+                </div>
+                <div class="cart__assembly-list">
+                  <div class="product-mini-card sale--price">
+                    <div class="img-pointer__card-img-box">
+                      <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                    </div>
+                    <div class="img-pointer__card-info img-pointer__card-info--sale">
+                      <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                        1A214402Bac20</span>
+                      <span class="img-pointer__card-info-price">Монтаж в подарок</span>
+                      <span class="img-pointer__card-info-sale">-99%</span>
+                      <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                    </div>
+                    <button class="product-mini-card__cancel link">Отменить монтаж</button>
+                  </div>
+                  <div class="product-mini-card sale--price">
+                    <div class="img-pointer__card-img-box">
+                      <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                    </div>
+                    <div class="img-pointer__card-info img-pointer__card-info--sale">
+                      <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                        1A214402Bac20</span>
+                      <span class="img-pointer__card-info-price">2 000 ₽/услугу</span>
+                      <span class="img-pointer__card-info-sale">-99%</span>
+                      <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                    </div>
+                    <button class="product-mini-card__cancel link">Отменить монтаж</button>
+                  </div>
+                  <div class="product-mini-card sale--price">
+                    <div class="img-pointer__card-img-box">
+                      <img class="img-pointer__card-img" src="images/img-pointer-1.png" alt="img-pointer">
+                    </div>
+                    <div class="img-pointer__card-info img-pointer__card-info--sale">
+                      <span class="img-pointer__card-info-title">Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет
+                        1A214402Bac20</span>
+                      <span class="img-pointer__card-info-price">2 000 ₽/услугу</span>
+                      <span class="img-pointer__card-info-sale">-99%</span>
+                      <span class="img-pointer__card-info-old-price">999 999 ₽/шт</span>
+                    </div>
+                    <button class="product-mini-card__cancel link">Отменить монтаж</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="in-cart page-cart-order">
+      <div class="container">
+        <div class="in-cart__inner">
+          <div class="in-cart__box">
+            <div class="order__box-fixed">
+              <span class="price-box__sale-val price-box__sale-val--big">127 680 ₽</span>
+              <button class="b-small">Показать</button>
+            </div>
+            <button class="btn-blue" type="">Оформить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-none" style="display: none;">
+    </section>
+  </main>
+  <!--=include footer.html-->
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+
+    </div>
+  </div>
+  <div class="modalsM">
+    <div class="modal-overlayM">
+
+    </div>
+  </div>
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/noUiSlider/nouislider.min.js"></script>
+  <script src="libs/jquery/jquery.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+
+</html>

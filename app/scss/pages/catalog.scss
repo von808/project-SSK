@@ -189,7 +189,7 @@
   padding: 44px 0 52px;
   margin-bottom: 32px;
 
-  &.saccess {
+  &.success {
     .form__input-box {
       .manage__form-input {
         padding-right: 198px !important;
@@ -804,14 +804,6 @@
       text-decoration: line-through;
     }
 
-    .product-list-infobox__price-sale {
-      color: var(--content-attention, #F00);
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 24px;
-    }
-
     .product-list-infobox__price-current {
       color: var(--content-primary, #272727);
       font-size: 16px;
@@ -868,4 +860,12 @@
       left: 15%;
     }
   }
+}
+
+.product-list-infobox__price-sale {
+  color: var(--content-attention, #F00);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
 }
