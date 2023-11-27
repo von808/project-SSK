@@ -174,7 +174,35 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  document.querySelector('.brands__tabs-btn:nth-child(1)').click();
+  // document.querySelector('.brands__tabs-btn:nth-child(1)').click();
+
+  // PRODUCT-CARD-TABS
+  const productCardBtn = document.querySelectorAll('.product-card__tab-btn')
+  const productCardItem = document.querySelectorAll('.product-card__chars-tab')
+
+  productCardBtn.forEach(brandsTabClick);
+
+  function brandsTabClick(item) {
+    item.addEventListener('click', function () {
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute('data-tab');
+      let currentTab = document.querySelector(tabId);
+
+      if (!currentBtn.classList.contains('activePC')) {
+
+        productCardBtn.forEach(function (item) {
+          item.classList.remove('activePC');
+        });
+
+        productCardItem.forEach(function (item) {
+          item.classList.remove('activePC');
+        });
+
+        currentBtn.classList.add('activePC');
+        currentTab.classList.add('activePC');
+      }
+    })
+  }
 
   // OUT-CATEGORY
 
@@ -247,6 +275,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ACCARDION
+document.querySelectorAll('.accardion__item-head').forEach((el) => {
+  el.addEventListener('click', () => {
+    let content = el.nextElementSibling;
+
+    if (content.style.maxHeight) {
+      document.querySelectorAll('.accardion__item-body').forEach((el) => el.style.maxHeight = null)
+    } else {
+      document.querySelectorAll('.accardion__item-body').forEach((el) => el.style.maxHeight = null)
+      content.style.maxHeight = content.scrollHeight + 32 + 'px';
+    }
+  })
+});
+
+(function () {
+  var caseItem = document.querySelectorAll('.accardion__item-head'),
+    active = document.getElementsByClassName('accardion-active');
+
+  Array.from(caseItem).forEach(function (item, i, caseItem) {
+    item.addEventListener('click', function (e) {
+      if (active.length > 0 && active[0] !== this)
+        active[0].classList.remove('accardion-active');
+
+      this.classList.toggle('accardion-active');
+    });
+  });
+})();
 
 // FOOTER-ACCARDION
 document.querySelectorAll('.footer__content-item-head').forEach((el) => {
