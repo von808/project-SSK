@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <!--=include header-user.html-->
+  <!--=include header-compact.html-->
+
+  <!--=include burger.html-->
+  <main class="main">
+    <section class="profile-wrapper">
+      <div class="container">
+        <div class="profile-wrapper__inner">
+          <div class="profile-sidebar">
+            <ul class="profile-sidebar__list">
+              <li class="profile-sidebar__list-item profile-sidebar__list-item--selected">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Профиль</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#sale"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Уровень скидки</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#clock-rewind"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Заказы <span>(93)</span></span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#annotation-check"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Отзывы <span>(5)</span></span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Настройки</span>
+                </a>
+              </li>
+            </ul>
+            <a class="quit" href="#!">Выйти</a>
+          </div>
+          <div class="profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon active" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#sale"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#clock-rewind"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#annotation-check"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-wrapper__content">
+            <div class="profile page-profile">
+              <div class="page-title page-title--fit">
+                <div class="page-title__inner">
+                  <h1 class="page-title__title">Профиль</h1>
+                  <button class="span-color span-color--standart">Обычный</button>
+                  <button class="span-color span-color--bronze">Бронза</button>
+                  <button class="span-color span-color--silver">Серебро</button>
+                  <button class="span-color span-color--gold span-color-active">Золото</button>
+                  <button class="span-color span-color--profi">Профи</button>
+                </div>
+              </div>
+              <div class="profile__head">
+                <div class="profile__user">
+                  <div class="profile__user-avatar">
+                    <span>П</span>
+                  </div>
+                  <div class="profile__user-name">
+                    <span>Петр</span>
+                    <span>Сергеевич</span>
+                  </div>
+                  <a class="quit" href="#!">Выйти</a>
+                </div>
+                <div class="bonus-counter">
+                  <div class="bonus-counter__score">
+                    <span>3 378</span> баллов
+                  </div>
+                  <div class="bonus-counter__sale">
+                    -<span>10</span>%
+                  </div>
+                </div>
+              </div>
+              <div class="profile__body">
+                <form class="form-box profile-form" action="">
+                  <div class="profile-form__head">
+                    <h3 class="form-box__title">Контакты</h3>
+                    <button class="profile-form__btn-edit" type="button">
+                      <svg class="icon-edit">
+                        <use xlink:href="#edit"></use>
+                      </svg>
+                    </button>
+                    <button class="profile-form__btn-save link" type="button" style="display: none;">Сохранить</button>
+                  </div>
+                  <div class="profile-form__body profile-form__body-contacts">
+                    <div class="order__box-inputs">
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="ex@mail.com" readonly>
+                        <label class="form__label">Почта</label>
+                      </div>
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="+7 900 000 00 00" readonly>
+                        <label class="form__label">Телефон</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form class="form-box profile-form" action="">
+                  <div class="profile-form__head">
+                    <h3 class="form-box__title">Адрес</h3>
+                    <button class="profile-form__btn-edit" type="button">
+                      <svg class="icon-edit">
+                        <use xlink:href="#edit"></use>
+                      </svg>
+                    </button>
+                    <button class="profile-form__btn-save link" type="button" style="display: none;">Сохранить</button>
+                  </div>
+                  <div class="profile-form__body  profile-form__body-address">
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input" type="text" placeholder="" value="Санкт-Петербург" readonly>
+                      <label class="form__label">Город</label>
+                    </div>
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input" type="text" placeholder="" value="Саратовский проезд" readonly>
+                      <label class="form__label">Улица</label>
+                    </div>
+                    <div class="order__box-inputs">
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="12Б" readonly>
+                        <label class="form__label">Дом/Корпус</label>
+                      </div>
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="Нет" readonly>
+                        <label class="form__label">Квартира</label>
+                      </div>
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="Нет" readonly>
+                        <label class="form__label">Этаж</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <a class="btn-change-password btn-white" href="#!">Сменить пароль</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <!--=include modal-autorization.html-->
+    </div>
+  </div>
+  
+  <script defer src="libs/jquery/jquery.js"></script>
+  <script defer src="js/modal.js"></script>
+  <script defer src="js/main.js"></script>
+  </body>
+
+</html>

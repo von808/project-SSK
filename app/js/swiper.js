@@ -149,6 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
       el: ".swiper-scrollbar",
     },
   });
+  var swiper = new Swiper(".lineSwiper2-auto", {
+    a11y: false,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
   var swiper = new Swiper(".brandsSwiper", {
     a11y: false,
     slidesPerView: 2.4,
@@ -201,73 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  $(function initSlider() {
-
-    const compairsSliders = document.querySelectorAll('.comparison__char-slides');
-    const compairsCompactSliders = document.querySelectorAll('.comparison__head-slides');
-
-    // $('.comparison__head-slides').slick({
-    //   infinite: false,
-    //   slidesToShow: 3,
-    //   slidesToScroll: 1,
-    //   pagination: false,
-    //   prevArrow: '<div class="swiper-button-prev"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
-    //   nextArrow: '<div class="swiper-button-next"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
-    //   asNavFor: compairsSliders,
-    //   responsive: [
-    //     {
-    //       breakpoint: 1350,
-    //       settings: {
-    //         slidesToShow: 2,
-    //         slidesToScroll: 1,
-    //       }
-    //     },
-    //   ]
-    // });
-
-    compairsCompactSliders.forEach((el) => {
-      $(el).slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        pagination: false,
-        prevArrow: '<div class="swiper-button-prev"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
-        nextArrow: '<div class="swiper-button-next"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
-        asNavFor: compairsSliders,
-        responsive: [
-          {
-            breakpoint: 1350,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            }
-          },
-        ],
-      });
-    });
-
-    compairsSliders.forEach((el) => {
-      $(el).slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        pagination: false,
-        arrows: false,
-        swipe: false,
-        responsive: [
-          {
-            breakpoint: 1350,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            }
-          },
-        ]
-      });
-    });
-  })
-
-  // PRODUCT-CARD-SWIPER
+  // RESIZABLE-SWIPER
 
   const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
     let swiper;
@@ -342,4 +284,103 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     someFunc
   );
+
+  resizableSwiper(
+    '(max-width: 991px)',
+    '.slider-logos',
+    {
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      freeMode: true,
+      a11y: false,
+      loop: false,
+      pagination: false,
+    },
+    someFunc
+  );
+
+  resizableSwiper(
+    '(max-width: 991px)',
+    '.swiper-steps',
+    {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      freeMode: true,
+      a11y: false,
+      loop: false,
+      pagination: false,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    },
+    someFunc
+  );
+
+  // SLICK
+
+  $(function initSlider() {
+
+    const compairsSliders = document.querySelectorAll('.comparison__char-slides');
+    const compairsCompactSliders = document.querySelectorAll('.comparison__head-slides');
+
+    // $('.comparison__head-slides').slick({
+    //   infinite: false,
+    //   slidesToShow: 3,
+    //   slidesToScroll: 1,
+    //   pagination: false,
+    //   prevArrow: '<div class="swiper-button-prev"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
+    //   nextArrow: '<div class="swiper-button-next"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
+    //   asNavFor: compairsSliders,
+    //   responsive: [
+    //     {
+    //       breakpoint: 1350,
+    //       settings: {
+    //         slidesToShow: 2,
+    //         slidesToScroll: 1,
+    //       }
+    //     },
+    //   ]
+    // });
+
+    compairsCompactSliders.forEach((el) => {
+      $(el).slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        pagination: false,
+        prevArrow: '<div class="swiper-button-prev"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
+        nextArrow: '<div class="swiper-button-next"><span class="swiper-controls-overlay-single"></span><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
+        asNavFor: compairsSliders,
+        responsive: [
+          {
+            breakpoint: 1350,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+        ],
+      });
+    });
+
+    compairsSliders.forEach((el) => {
+      $(el).slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        pagination: false,
+        arrows: false,
+        swipe: false,
+        responsive: [
+          {
+            breakpoint: 1350,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+      });
+    });
+  })
 });

@@ -1,0 +1,315 @@
+<!-- AUTORIZATION -->
+<div class="modal popup-autorization" data-target="popup-autorization">
+  <div class="modal-box modal__autorization">
+    <div class="modal__autorization-box">
+      <div class="modal-box__head">
+        <div class="modal-box__head-box">
+          <h2 class="modal-box__head-title">Личный кабинет</h2>
+          <button class="modal-box__head-link popup-open" type="button" data-path="popup-reset-password">Забыли
+            пароль?</button>
+        </div>
+        <button class="btn__icon-close">
+          <svg class="icon-close popup-close mob">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-box__body">
+        <div class="modal-box__body-inputs-row">
+          <div class="form__input-box">
+            <span class="input-overlay-disabled"></span>
+            <input class="form__input" type="text" placeholder="" required>
+            <label class="form__label">Почта <span class="required-red">*</span></label>
+          </div>
+          <div class="form__input-box">
+            <span class="input-overlay-disabled"></span>
+            <input class="form__input password--modal-autorization-1 form__input--btn" type="password" placeholder=""
+              value="">
+            <label class="form__label">Пароль <span class="required-red">*</span></label>
+            <button class="password-eye password-eye--modal-autorization-1 form__input-btn" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-box__footer">
+        <div class="modal-box__footer-btns">
+          <button class="btn-blue" type="button">Войти</button>
+          <button class="btn-white popup-open" data-path="popup-registration" type="button">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modals-tooltip">
+    Нажмите в любом месте, чтобы
+    <button class="popup-close">закрыть</button>
+  </div>
+</div>
+<div class="modal popup-autorization" data-target="popup-reset-password">
+  <div class="modal-box modal__autorization">
+    <div class="modal__autorization-box">
+      <div class="modal-box__head">
+        <button class="modal-box__back popup-open" data-path="popup-autorization" type="button">
+          <svg class="chevron-right">
+            <use xlink:href="#chevron-right"></use>
+          </svg>
+          <h2 class="modal-box__head-title">Восстановить</h2>
+        </button>
+        <button class="btn__icon-close">
+          <svg class="icon-close popup-close mob">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-box__body">
+        <div class="modal-box__body-inputs-row">
+          <div class="form__input-box">
+            <span class="input-overlay-disabled"></span>
+            <input class="form__input" type="text" placeholder="" required>
+            <label class="form__label">Почта <span class="required-red">*</span></label>
+            <span class="form__input-text">
+              Мы направим вам одноразовый код чтобы восстановить доступ.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-box__footer">
+        <div class="modal-box__footer-btns">
+          <button class="btn-blue popup-open" type="button" data-path="popup-reset-password-code">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modals-tooltip">
+    Нажмите в любом месте, чтобы
+    <button class="popup-close">закрыть</button>
+  </div>
+</div>
+<div class="modal popup-autorization" data-target="popup-reset-password-code">
+  <div class="modal-box modal__autorization">
+    <div class="modal__autorization-box">
+      <div class="modal-box__head">
+        <h2 class="modal-box__head-title">Код</h2>
+        <button class="btn__icon-close">
+          <svg class="icon-close popup-close mob">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-box__body">
+        <div class="modal-box__body-inputs-row">
+          <div class="password-code__text">
+            Мы отправили вам одноразовый код на <span>ex@mail.com</span> 
+            <button class="profile-form__btn-edit popup-open" type="button" data-path="popup-reset-password">
+              <svg class="icon-edit">
+                <use xlink:href="#edit"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="password-code__inputs">
+            <input class="password-code__input" type="number" minlength="1" maxlength="1" min="1" max="1">
+            <input class="password-code__input" type="number">
+            <input class="password-code__input" type="number">
+            <input class="password-code__input" type="number">
+          </div>
+        </div>
+      </div>
+      <div class="modal-box__footer">
+        <div class="modal-box__footer-btns">
+          <button class="btn-blue popup-open" type="button" data-path="popup-password-new">Продолжить</button>
+          <a class="link" href="#!">Отправить еще раз</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modals-tooltip">
+    Нажмите в любом месте, чтобы
+    <button class="popup-close">закрыть</button>
+  </div>
+</div>
+<div class="modal popup-autorization" data-target="popup-password-new">
+  <div class="modal-box modal__autorization">
+    <div class="modal__autorization-box">
+      <div class="modal-box__head">
+        <h2 class="modal-box__head-title">Новый пароль</h2>
+        <button class="btn__icon-close">
+          <svg class="icon-close popup-close mob">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-box__body">
+        <div class="modal-box__body-inputs-row">
+          <div class="form__input-box">
+            <span class="input-overlay-disabled"></span>
+            <input class="form__input password--modal-password-new-1 form__input--btn" type="password" placeholder=""
+              value="">
+            <label class="form__label">Новый пароль <span class="required-red">*</span></label>
+            <button class="password-eye password-eye--modal-password-new-1 form__input-btn" type="button"></button>
+            <span class="form__input-text">
+              <span>Пароль должен содержать Латиницу: [Aa-Zz],</span>
+              <span>а также спец. символы: [! _ - + = ~ *].</span>
+            </span>
+          </div>
+          <div class="form__input-box">
+            <span class="input-overlay-disabled"></span>
+            <input class="form__input password--modal-password-new-2 form__input--btn" type="password" placeholder=""
+              value="">
+            <label class="form__label">Еще раз <span class="required-red">*</span></label>
+            <button class="password-eye password-eye--modal-password-new-2 form__input-btn" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-box__footer">
+        <div class="modal-box__footer-btns">
+          <button class="btn-blue" type="button">Сохранить и войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modals-tooltip">
+    Нажмите в любом месте, чтобы
+    <button class="popup-close">закрыть</button>
+  </div>
+</div>
+<!-- REGISTRATION -->
+<div class="modal popup-autorization" data-target="popup-registration">
+  <div class="modal-box--wrapper">
+    <div class="modal-box modal__autorization">
+      <div class="modal__autorization-box">
+        <div class="modal-box__head">
+          <button class="modal-box__back popup-open" data-path="popup-autorization" type="button">
+            <svg class="chevron-right">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+            <h2 class="modal-box__head-title">Регистрация</h2>
+          </button>
+        </div>
+        <div class="modal-box__body">
+          <div class="modal-box__body-inputs-row">
+            <div class="form__input-box">
+              <span class="input-overlay-disabled"></span>
+              <input class="form__input" type="text" placeholder="" required>
+              <label class="form__label">Почта <span class="required-red">*</span></label>
+              <span class="form__input-text">
+                Мы отправим на почту код подтверждения.
+              </span>
+            </div>
+            <div class="form__input-box">
+              <span class="input-overlay-disabled"></span>
+              <input class="form__input" type="number" placeholder="" required>
+              <label class="form__label">Телефон <span class="required-red">*</span></label>
+            </div>
+            <div class="form__input-box">
+              <span class="input-overlay-disabled"></span>
+              <input class="form__input" type="text" placeholder="" required>
+              <label class="form__label">Имя Отчество <span class="required-red">*</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-box modal__autorization">
+      <div class="modal__autorization-box">
+        <div class="modal-box__head">
+          <h2 class="modal-box__head-title">Пароль</h2>
+        </div>
+        <div class="modal-box__body">
+          <div class="modal-box__body-inputs-row">
+            <div class="form__input-box">
+              <span class="input-overlay-disabled"></span>
+              <input class="form__input password--modal-registration-1 form__input--btn" type="password" placeholder=""
+                value="">
+              <label class="form__label">Новый пароль <span class="required-red">*</span></label>
+              <button class="password-eye password-eye--modal-registration-1 form__input-btn" type="button"></button>
+              <span class="form__input-text">
+                <span>Пароль должен содержать Латиницу: [Aa-Zz],</span>
+                <span>а также спец. символы: [! _ - + = ~ *].</span>
+              </span>
+            </div>
+            <div class="form__input-box">
+              <span class="input-overlay-disabled"></span>
+              <input class="form__input password--modal-registration-2 form__input--btn" type="password" placeholder=""
+                value="">
+              <label class="form__label">Еще раз <span class="required-red">*</span></label>
+              <button class="password-eye password-eye--modal-registration-2 form__input-btn" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-box modal__autorization">
+      <div class="modal__autorization-box">
+        <div class="custom-box">
+          <form class="form-box profile-form" action="">
+            <div class="profile-form__head">
+              <label class="checkbox-label">
+                <input class="input-hidden checkbox-input" type="checkbox" checked>
+                <div class="checkbox-box">
+                  <svg class="checkbox-check">
+                    <use xlink:href="#checkbox-check"></use>
+                  </svg>
+                </div>
+                <span>Я — Профессионал</span>
+              </label>
+              <a class="profile-form__btn-save link" href="#!">Подробнее</a>
+            </div>
+            <div class="profile-form__body  profile-form__body-professional">
+              <div class="modal__reviews-input--file-box">
+                <input class="modal__reviews-input--file" type="file" />
+                <span class="custom-text">Добавить диплом</span>
+              </div>
+              <span class="form__input-text">
+                Нам необходимо понять, что вы действительно профессионал. Может быть диплом дизайнера, архитектора или
+                свидетельство о
+                прохождении соответствующих курсов.
+              </span>
+              <div class="form__input-box">
+                <span class="input-overlay-disabled"></span>
+                <input class="form__input form__input--btn" type="text" placeholder="" value="">
+                <label class="form__label">Ссылка</label>
+                <button class="form__input-btn" type="submit">
+                  <svg class="icon-minus">
+                    <use xlink:href="#minus"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="form__input-box">
+                <span class="input-overlay-disabled"></span>
+                <input class="form__input form__input--btn" type="text" placeholder="" value="">
+                <label class="form__label">Ссылка</label>
+                <button class="form__input-btn" type="submit">
+                  <svg class="icon-plus">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <span class="form__input-text">
+                Так же пришлите ссылки на ваш сайт или на аккаунты в соц. сетях, подтверждающие ваш статус.
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-box modal__autorization">
+      <div class="modal__autorization-box">
+        <div class="custom-box custom-box--registration-2">
+          <label class="checkbox-label">
+            <input class="input-hidden checkbox-input" type="checkbox" checked>
+            <div class="checkbox-box">
+              <svg class="checkbox-check">
+                <use xlink:href="#checkbox-check"></use>
+              </svg>
+            </div>
+            <span>Даю свое согласие на <a class="link" href="#!">обработку персональных данных</a> и соглашаюсь
+              с <a class="link" href="#!">политикой конфиденциальности</a></span>
+          </label>
+          <button class="btn-blue">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modals-tooltip">
+    Нажмите в любом месте, чтобы
+    <button class="popup-close">закрыть</button>
+  </div>
+</div>

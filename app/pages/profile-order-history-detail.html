@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order history</title>
+  <!--=include header-user.html-->
+  <!--=include header-compact.html-->
+
+  <!--=include burger.html-->
+  <main class="main">
+    <section class="profile-wrapper">
+      <div class="container">
+        <div class="profile-wrapper__inner">
+          <div class="profile-sidebar">
+            <ul class="profile-sidebar__list">
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Профиль</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#sale"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Уровень скидки</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item profile-sidebar__list-item--selected">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#clock-rewind"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Заказы <span>(93)</span></span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#annotation-check"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Отзывы <span>(5)</span></span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Настройки</span>
+                </a>
+              </li>
+            </ul>
+            <a class="quit" href="#!">Выйти</a>
+          </div>
+          <div class="profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#sale"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon active" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#clock-rewind"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#annotation-check"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-wrapper__content">
+            <div class="profile page-order-history-detail">
+              <div class="page-title page-title--fit">
+                <div class="page-title__inner">
+                  <h1 class="page-title__title">№<span>833237</span></h1>
+                  <span class="page-title__subtitle"><span>3</span> позиции</span>
+                </div>
+                <div class="order-history__price-box">
+                  <div class="order-history__price"><span>54 400</span> ₽</div>
+                  <div class="order-history__price-score">+ <span>1 879</span> баллов</div>
+                </div>
+              </div>
+              <div class="profile__body">
+                <div class="profile__body-top">
+                  <div class="profile__body-top__inner">
+                    <div class="crumbs-back">
+                      <div class="crumbs-back__inner">
+                        <a class="crumbs-back__btn btn-white" href="#!">
+                          <svg class="icon-arrow">
+                            <use xlink:href="#arrow"></use>
+                          </svg>
+                          Назад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="order-history__status">
+                      <span class="order-history__status-info span-color span-color--lightgreen">В пути</span>
+                      <span class="order-history__info-date">от <span>21.02.2023</span></span>
+                    </div>
+                  </div>
+                  <a class="order-history-detail__share-cart link" href="#!">
+                    <span>Поделиться корзиной</span>
+                    <svg class="icon-share">
+                      <use xlink:href="#share"></use>
+                    </svg>
+                  </a>
+                </div>
+                <form class="form-box profile-form" action="">
+                  <div class="profile-form__head">
+                    <h3 class="form-box__title">Доставка</h3>
+                  </div>
+                  <div class="profile-form__body  profile-form__body-address">
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input" type="text" placeholder="" value="Санкт-Петербург" readonly>
+                      <label class="form__label">Город</label>
+                    </div>
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input" type="text" placeholder="" value="Саратовский проезд" readonly>
+                      <label class="form__label">Улица</label>
+                    </div>
+                    <div class="order__box-inputs">
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="12Б" readonly>
+                        <label class="form__label">Дом/Корпус</label>
+                      </div>
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="Нет" readonly>
+                        <label class="form__label">Квартира</label>
+                      </div>
+                      <div class="form__input-box">
+                        <span class="input-overlay-disabled"></span>
+                        <input class="form__input" type="text" placeholder="" value="Нет" readonly>
+                        <label class="form__label">Этаж</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <ul class="order-history-detail__list">
+                  <li class="order-history-detail__list-item">
+                    <div class="order-history-detail__img-box">
+                      <img class="order-history-detail__img" src="images/img-pointer-1.png" alt="">
+                    </div>
+                    <h5 class="order-history-detail__name">Зеркало</h5>
+                    <div class="promocode">
+                      <div class="promocode__promo">
+                        <span class="promocode__precent">- 30%</span>
+                        <div class="promocode__code-box">
+                          <span class="promocode__code-subtitle">По промокоду</span>
+                          <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-history-detail__descr">
+                      <p>
+                        Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет 1A214402Bac20
+                      </p>
+                    </div>
+                    <div class="price-box__price-box cart__item-price">
+                      <div class="price-box__sale-box">
+                        <span class="img-pointer__card-info-sale">-50%</span>
+                        <span class="img-pointer__card-info-old-price">12 780 ₽/шт</span>
+                      </div>
+                      <h2 class="price-box__title">
+                        <span>11 340</span> ₽/шт
+                      </h2>
+                    </div>
+                    <div class="order-history-detail__quantity">
+                      <span>1</span> <span class="order-history-detail__quantity-text">шт</span>
+                    </div>
+                  </li>
+                  <li class="order-history-detail__list-item">
+                    <div class="order-history-detail__img-box">
+                      <img class="order-history-detail__img" src="images/img-pointer-1.png" alt="">
+                    </div>
+                    <h5 class="order-history-detail__name">Зеркало</h5>
+                    <div class="promocode">
+                      <div class="promocode__promo">
+                        <span class="promocode__precent">- 30%</span>
+                        <div class="promocode__code-box">
+                          <span class="promocode__code-subtitle">По промокоду</span>
+                          <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-history-detail__descr">
+                      <p>
+                        Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет 1A214402Bac20
+                      </p>
+                    </div>
+                    <div class="price-box__price-box cart__item-price">
+                      <div class="price-box__sale-box">
+                        <span class="img-pointer__card-info-sale">-50%</span>
+                        <span class="img-pointer__card-info-old-price">12 780 ₽/шт</span>
+                      </div>
+                      <h2 class="price-box__title">
+                        <span>11 340</span> ₽/шт
+                      </h2>
+                    </div>
+                    <div class="order-history-detail__quantity">
+                      <span>3</span> <span class="order-history-detail__quantity-text">шт</span>
+                    </div>
+                  </li>
+                  <li class="order-history-detail__list-item">
+                    <div class="order-history-detail__img-box">
+                      <img class="order-history-detail__img" src="images/img-pointer-1.png" alt="">
+                    </div>
+                    <h5 class="order-history-detail__name">Зеркало</h5>
+                    <div class="promocode">
+                      <div class="promocode__promo">
+                        <span class="promocode__precent">- 30%</span>
+                        <div class="promocode__code-box">
+                          <span class="promocode__code-subtitle">По промокоду</span>
+                          <span class="promocode__code">ВВС30ЛОШАДЬ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-history-detail__descr">
+                      <p>
+                        Зеркало Aquaton Бекка Pro 70 Дуб Сомерсет 1A214402Bac20
+                      </p>
+                    </div>
+                    <div class="price-box__price-box cart__item-price">
+                      <div class="price-box__sale-box">
+                        <span class="img-pointer__card-info-sale">-50%</span>
+                        <span class="img-pointer__card-info-old-price">12 780 ₽/шт</span>
+                      </div>
+                      <h2 class="price-box__title">
+                        <span>11 340</span> ₽/шт
+                      </h2>
+                    </div>
+                    <div class="order-history-detail__quantity">
+                      <span>1</span> <span class="order-history-detail__quantity-text">шт</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <!--=include modal-autorization.html-->
+    </div>
+  </div>
+  
+  <script defer src="libs/jquery/jquery.js"></script>
+  <script defer src="js/profile.js"></script>
+  <script defer src="js/main.js"></script>
+  </body>
+
+</html>

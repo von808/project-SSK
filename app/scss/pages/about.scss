@@ -144,14 +144,30 @@
   }
 
   &__item-title {
-    color: var(--content-primary, #272727);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 36px;
 
     display: flex;
     flex-direction: column;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--content-primary, #272727);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+    }
+
+    span {
+      color: var(--content-primary, #272727);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+    }
 
     p {
       color: var(--content-tertiary-transparent, rgba(0, 0, 0, 0.32));

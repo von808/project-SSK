@@ -550,6 +550,7 @@
 
   &-bottom__btn {
     width: 100%;
+    white-space: nowrap;
 
     &:not(:last-child) {
       margin-bottom: 24px;

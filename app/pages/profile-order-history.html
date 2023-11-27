@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order history</title>
+  <!--=include header-user.html-->
+  <!--=include header-compact.html-->
+
+  <!--=include burger.html-->
+  <main class="main">
+    <section class="profile-wrapper">
+      <div class="container">
+        <div class="profile-wrapper__inner">
+          <div class="profile-sidebar">
+            <ul class="profile-sidebar__list">
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Профиль</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#sale"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Уровень скидки</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item profile-sidebar__list-item--selected">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#clock-rewind"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Заказы <span>(93)</span></span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#annotation-check"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Отзывы <span>(5)</span></span>
+                </a>
+              </li>
+              <li class="profile-sidebar__list-item">
+                <a class="profile-sidebar__list-item--link" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                  </svg>
+                  <span class="profile-sidebar__text">Настройки</span>
+                </a>
+              </li>
+            </ul>
+            <a class="quit" href="#!">Выйти</a>
+          </div>
+          <div class="profile-menu">
+            <ul class="profile-menu__list">
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#sale"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon active" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#clock-rewind"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#annotation-check"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="profile-menu__list-item">
+                <a class="profile-menu__list-item--link btn-icon" href="#!">
+                  <svg class="profile-sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-wrapper__content">
+            <div class="profile page-order-history">
+              <div class="page-title page-title--fit">
+                <div class="page-title__inner">
+                  <h1 class="page-title__title">Заказы</h1>
+                  <span class="page-title__subtitle">93 записей</span>
+                </div>
+              </div>
+              <div class="profile__body">
+                <div class="order-history">
+                  <ul class="order-history__list">
+                    <li class="order-history__list-item order-history__list-item--way">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>93</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">В пути</span>
+                          <div class="order-history__status-numb">№<span>833237</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>3</span> позиции</span>
+                            <span>Самовывоз</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>21.02.2023</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>54 400</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>1 879</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>92</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>833746</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>2</span> позиции</span>
+                            <span>Самовывоз</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>20.02.2023</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>102 000</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>1 020</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>91</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>832038</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>54</span> позиции</span>
+                            <span>Доставка</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>05.01.2023</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>26 400</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>260</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>90</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>830492</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>34</span> позиции</span>
+                            <span>Самовывоз</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>04.10.2022</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>89 270</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>1 100</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>89</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>803948</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>2</span> позиции</span>
+                            <span>Доставка</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>08.09.2022</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>100 400</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>3 380</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>88</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>838473</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>1</span> позиции</span>
+                            <span>Самовывоз</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>20.05.2022</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>7 200</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>72</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>87</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>748993</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>2</span> позиции</span>
+                            <span>Доставка</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>29.04.2022</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>389 000</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>1 879</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>86</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>739938</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>3</span> позиции</span>
+                            <span>Доставка</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>17.04.2022</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>172 000</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>2 300</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="order-history__list-item order-history__list-item--archive">
+                      <a class="order-history__list-item--link" href="#!">
+                        <div class="order-history__numb">
+                          <span>85</span>
+                        </div>
+                        <div class="order-history__status">
+                          <span class="order-history__status-info span-color">Архив</span>
+                          <div class="order-history__status-numb">№<span>647883</span></div>
+                        </div>
+                        <div class="order-history__info">
+                          <div class="custom-box">
+                            <span><span>10</span> позиции</span>
+                            <span>Самовывоз</span>
+                          </div>
+                          <span class="order-history__info-date">от <span>20.01.2022</span></span>
+                        </div>
+                        <div class="order-history__right">
+                          <div class="order-history__price-box">
+                            <div class="order-history__price"><span>23 220</span> ₽</div>
+                            <div class="order-history__price-score">+ <span>879</span> баллов</div>
+                          </div>
+                          <div class="order-history__arrow">
+                            <svg class="icon-arrow-24">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="see-more">
+                  <div class="see-more__inner">
+                    <button class="btn-white see-more__btn">Загрузить еще</button>
+                    <div class="see-more__pagination">
+                      <div class="see-more__pagination-pages">
+                        <span>2</span> из <span> 15</span>
+                      </div>
+                      <div class="see-more__pagination-btn">
+                        <div class="mini-swiper1__controls">
+                          <div class="swiper-button-next">
+                            <svg class="chevron-right">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                          <div class="swiper-button-prev">
+                            <svg class="chevron-right">
+                              <use xlink:href="#arrow-right"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <!--=include modal-autorization.html-->
+    </div>
+  </div>
+  
+  <script defer src="libs/jquery/jquery.js"></script>
+  <script defer src="js/profile.js"></script>
+  <script defer src="js/main.js"></script>
+  </body>
+
+</html>

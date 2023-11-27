@@ -1,0 +1,280 @@
+<link rel="stylesheet" href="libs/slick/slick-theme.css">
+<link rel="stylesheet" href="libs/slick/slick.css">
+<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="libs/noUiSlider/nouislider.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--=include sprite.html-->
+  <div class="wrapper">
+    <div class="overlay-full"></div>
+    <header class="header">
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar__inner">
+            <div class="topbar__left">
+              <div class="droplist topbar__city">
+                <div class="droplist-control" id="overlay-active">
+                  <span>Санкт-Петербург</span>
+                  <svg class="down-compact">
+                    <use xlink:href="#down-compact"></use>
+                  </svg>
+                </div>
+                <div class="droplist-list">
+                  <form class="form droplist__form">
+                    <!-- для отключения инпута добавить в блок form__input-box класс disabled -->
+                    <!-- при ошибке инпута нужно добавить в блок form__input-box класс failed -->
+                    <div class="form__input-box">
+                      <span class="input-overlay-disabled"></span>
+                      <input class="form__input droplist__form-input" type="search" placeholder=" ">
+                      <label class="form__label">Город</label>
+                      <button>
+                        <svg class="search__icon">
+                          <use xlink:href="#search-lg"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                  <ul class="droplist-list__items">
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Москва и МО</span>
+                    </li>
+                    <li class="droplist-list__item selected">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Санкт-Петербург и ЛО</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Саратов</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Самара</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Сызрань</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Севастополь</span>
+                    </li>
+                    <li class="droplist-list__item">
+                      <svg class="droplist-check">
+                        <use xlink:href="#selected-check"></use>
+                      </svg>
+                      <span>Севастополь</span>
+                    </li>
+                    <li class="droplist-list__item--failed">
+                      <div>
+                        <img src="images/face-sad.svg" alt="face-sad">
+                        <span>Жаль, мы не нашли Ваш город.</span>
+                      </div>
+                      <p>
+                        Если город написан верно, пожалуйста, сообщите нам о недочете.
+                      </p>
+                      <a href="#!">Рассказать администратору</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="topbar__addresses" href="#!">
+                Адреса
+              </a>
+            </div>
+            <nav class="topbar__nav">
+              <div class="droplist-a">
+                <div class="droplist-control">
+                  <span>О компании</span>
+                  <svg class="down-compact">
+                    <use xlink:href="#down-compact"></use>
+                  </svg>
+                </div>
+                <div class="droplist-list">
+                  <ul class="droplist-list__items">
+                    <li class="droplist-list__item">
+                      <a href="#!">О компании</a>
+                    </li>
+                    <li class="droplist-list__item">
+                      <a href="#!">Бренды</a>
+                    </li>
+                    <li class="droplist-list__item">
+                      <a href="#!">Пункты самовывоза</a>
+                    </li>
+                    <li class="droplist-list__item">
+                      <a href="#!">Вакансии</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a class="topbar__nav-item--link" href="#!">
+                Контакты
+              </a>
+              <a class="topbar__nav-item--link" href="#!">
+                Пресс-центр
+              </a>
+              <a class="topbar__nav-item--link" href="#!">
+                Частные вопросы
+              </a>
+            </nav>
+            <div class="topbar__right">
+              <a class="topbar__loyalty" href="#!">Программа лояльности</a>
+              <a class="topbar__login" href="#!" style="display: none;">Войти</a>
+              <a class="topbar__user" href="#!">Петр Сергеевич</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__left">
+            <a class="logo--link" href="#!">
+              <img class="logo" src="images/logo.svg" alt="logo">
+              <!-- <svg class="logo">
+            <use xlink:href="#logo"></use>
+          </svg> -->
+            </a>
+            <span class="online-marker"></span>
+            <a class="header__phone--link" href="tel:+78003998585">+7 800 399 85 85</a>
+          </div>
+          <nav class="header__nav">
+            <a class="header__nav-item--link" href="#!">
+              Акции
+            </a>
+            <div class="droplist-a">
+              <div class="droplist-control">
+                <span>Покупателям</span>
+                <svg class="down-compact">
+                  <use xlink:href="#down-compact"></use>
+                </svg>
+              </div>
+              <div class="droplist-list">
+                <ul class="droplist-list__items">
+                  <li class="droplist-list__item">
+                    <a href="#!">Доставка и оплата</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Гарантия и возврат</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Обратная связь</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Бланки заявлений</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="droplist-a">
+              <div class="droplist-control">
+                <span>Для бизнеса</span>
+                <svg class="down-compact">
+                  <use xlink:href="#down-compact"></use>
+                </svg>
+              </div>
+              <div class="droplist-list">
+                <ul class="droplist-list__items">
+                  <li class="droplist-list__item">
+                    <a href="#!">Доставка и оплата</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Гарантия и возврат</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Обратная связь</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Бланки заявлений</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="droplist-a">
+              <div class="droplist-control">
+                <span>Услуги</span>
+                <svg class="down-compact">
+                  <use xlink:href="#down-compact"></use>
+                </svg>
+              </div>
+              <div class="droplist-list">
+                <ul class="droplist-list__items">
+                  <li class="droplist-list__item">
+                    <a href="#!">Доставка и оплата</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Гарантия и возврат</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Обратная связь</a>
+                  </li>
+                  <li class="droplist-list__item">
+                    <a href="#!">Бланки заявлений</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a class="header__nav-item--link" href="#!">
+              <span>Журнал</span>
+            </a>
+          </nav>
+          <div class="header__right">
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <svg class="header__icon">
+                  <use xlink:href="#search-lg"></use>
+                </svg>
+              </div>
+            </a>
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <div class="icon-marker">
+                  <span>3</span>
+                </div>
+                <svg class="header__icon">
+                  <use xlink:href="#scales"></use>
+                </svg>
+              </div>
+            </a>
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <svg class="header__icon">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
+            </a>
+            <a class="header__icon-box" href="#!">
+              <div class="btn-icon">
+                <div class="icon-marker">
+                  <span>2</span>
+                </div>
+                <svg class="header__icon">
+                  <use xlink:href="#shopping-cart"></use>
+                </svg>
+              </div>
+            </a>
+            <a class="header__icon-box burger-btn" href="#!">
+              <div class="btn-icon burger-btn-icon">
+                <svg class="header__icon">
+                  <use xlink:href="#burger"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </header>
