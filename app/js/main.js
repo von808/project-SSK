@@ -8,7 +8,7 @@ burgerBtnIcon.onclick = function () {
   burgerBtnIcon.classList.toggle('active');
   burgerList.classList.toggle('active');
   body.classList.toggle('lock');
-}
+};
 
 // FOR-EACH-FUNCTION
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,10 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Array.from(caseItem).forEach(function (item, i, caseItem) {
       item.addEventListener('click', function (e) {
-        if (active.length > 0 && active[0] !== this)
-          active[0].classList.remove('selected');
+        if (active.length > 1 && active[1] !== this)
+          active[1].classList.remove('selected');
 
         this.classList.toggle('selected');
+        console.log(active.length);
       });
     });
   })();
